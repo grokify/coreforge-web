@@ -1,0 +1,38 @@
+{
+  "name": "@coreforge/design-tokens",
+  "version": "0.1.0",
+  "description": "Design tokens and CSS custom properties for CoreForge applications",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./css": "./dist/tokens.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup && pnpm run build:css",
+    "build:css": "node scripts/generate-css.js",
+    "dev": "tsup --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "coreforge",
+    "design-tokens",
+    "css",
+    "theme"
+  ],
+  "author": "CoreForge Team",
+  "license": "MIT"
+}
