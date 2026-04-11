@@ -1,0 +1,45 @@
+{
+  "name": "@coreforge/shell",
+  "version": "0.1.0",
+  "description": "Application shell components for CoreForge applications",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "@coreforge/auth": "workspace:*",
+    "@coreforge/tenant": "workspace:*"
+  },
+  "devDependencies": {
+    "@coreforge/auth": "workspace:*",
+    "@coreforge/tenant": "workspace:*",
+    "@types/react": "^18.2.45",
+    "react": "^18.2.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "coreforge",
+    "shell",
+    "layout",
+    "navigation"
+  ],
+  "author": "CoreForge Team",
+  "license": "MIT"
+}
