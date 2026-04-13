@@ -1,0 +1,66 @@
+site_name: CoreForge Web
+site_description: React framework for building multi-tenant SaaS applications
+site_url: https://grokify.github.io/coreforge-web/
+repo_url: https://github.com/grokify/coreforge-web
+repo_name: grokify/coreforge-web
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quickstart.md
+  - Packages:
+    - Overview: packages/index.md
+    - "@coreforge/auth": packages/auth.md
+    - "@coreforge/tenant": packages/tenant.md
+    - "@coreforge/api-client": packages/api-client.md
+    - "@coreforge/telemetry": packages/telemetry.md
+    - "@coreforge/shell": packages/shell.md
+    - "@coreforge/pages": packages/pages.md
+    - "@coreforge/design-tokens": packages/design-tokens.md
+  - Architecture:
+    - Overview: architecture/overview.md
+  - Design:
+    - PRD: design/prd.md
+    - TRD: design/trd.md
+  - Roadmap:
+    - Plan: roadmap/plan.md
