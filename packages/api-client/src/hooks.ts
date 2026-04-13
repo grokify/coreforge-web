@@ -7,12 +7,7 @@ import {
   type InfiniteData,
 } from '@tanstack/react-query';
 import { useApiClient } from './ApiProvider';
-import type {
-  ApiError,
-  PaginatedResponse,
-  PaginationParams,
-  RequestOptions,
-} from './types';
+import type { ApiError, PaginatedResponse, PaginationParams, RequestOptions } from './types';
 
 /**
  * Hook for GET requests with React Query
@@ -151,11 +146,7 @@ export function useInfiniteApiQuery<T>(
   >({
     queryKey,
     queryFn: ({ pageParam }) =>
-      client.getPaginated<T>(
-        path,
-        { ...pagination, page: pageParam },
-        requestOptions
-      ),
+      client.getPaginated<T>(path, { ...pagination, page: pageParam }, requestOptions),
     initialPageParam: 1,
     getNextPageParam: (lastPage) => {
       const { page, total_pages } = lastPage.pagination;

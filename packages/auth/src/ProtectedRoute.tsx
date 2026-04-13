@@ -45,10 +45,7 @@ function DefaultUnauthorized() {
 /**
  * Check if user has required role in any of their memberships
  */
-function hasRequiredRole(
-  userRoles: Array<{ role: Role }>,
-  requiredRoles: Role[]
-): boolean {
+function hasRequiredRole(userRoles: Array<{ role: Role }>, requiredRoles: Role[]): boolean {
   // Get the minimum required level
   const minRequiredLevel = Math.min(...requiredRoles.map((r) => ROLE_LEVELS[r]));
 

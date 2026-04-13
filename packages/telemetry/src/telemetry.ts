@@ -25,10 +25,7 @@ export class ConsoleAdapter implements TelemetryAdapter {
       custom: '📊',
     }[event.type];
 
-    console.log(
-      `${emoji} [Telemetry] ${event.type}: ${event.name}`,
-      event.properties
-    );
+    console.log(`${emoji} [Telemetry] ${event.type}: ${event.name}`, event.properties);
   }
 
   identify(user: TelemetryUser): void {
@@ -123,9 +120,7 @@ export class TelemetryClient {
 
     // Add HTTP adapter if endpoint provided
     if (config.endpoint && !this.adapters.some((a) => a.name === 'http')) {
-      this.adapters.push(
-        new HttpAdapter(config.endpoint, config.batchSize, config.batchInterval)
-      );
+      this.adapters.push(new HttpAdapter(config.endpoint, config.batchSize, config.batchInterval));
     }
 
     // Set global properties
@@ -209,11 +204,7 @@ export class TelemetryClient {
   /**
    * Track a user action
    */
-  trackAction(
-    category: string,
-    action: string,
-    properties?: Record<string, unknown>
-  ): void {
+  trackAction(category: string, action: string, properties?: Record<string, unknown>): void {
     const event: ActionEvent = {
       type: 'action',
       name: `${category}:${action}`,

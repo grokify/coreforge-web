@@ -1,17 +1,6 @@
-import {
-  createContext,
-  useContext,
-  useMemo,
-  useEffect,
-  type ReactNode,
-} from 'react';
+import { createContext, useContext, useMemo, useEffect, type ReactNode } from 'react';
 import { TelemetryClient } from './telemetry';
-import type {
-  TelemetryConfig,
-  TelemetryContextValue,
-  TelemetryUser,
-  TelemetryOrg,
-} from './types';
+import type { TelemetryConfig, TelemetryContextValue, TelemetryUser, TelemetryOrg } from './types';
 
 /**
  * Telemetry context
@@ -76,11 +65,7 @@ export function TelemetryProvider({ children, config }: TelemetryProviderProps) 
       trackPageView: (path: string, properties?: Record<string, unknown>) => {
         client.trackPageView(path, properties);
       },
-      trackAction: (
-        category: string,
-        action: string,
-        properties?: Record<string, unknown>
-      ) => {
+      trackAction: (category: string, action: string, properties?: Record<string, unknown>) => {
         client.trackAction(category, action, properties);
       },
       trackError: (error: Error, context?: Record<string, unknown>) => {
@@ -111,11 +96,7 @@ export function TelemetryProvider({ children, config }: TelemetryProviderProps) 
     [client]
   );
 
-  return (
-    <TelemetryContext.Provider value={value}>
-      {children}
-    </TelemetryContext.Provider>
-  );
+  return <TelemetryContext.Provider value={value}>{children}</TelemetryContext.Provider>;
 }
 
 /**

@@ -21,10 +21,7 @@ export class BFFClient {
   /**
    * Make a request to the BFF
    */
-  private async request<T>(
-    path: string,
-    options: RequestInit = {}
-  ): Promise<T> {
+  private async request<T>(path: string, options: RequestInit = {}): Promise<T> {
     const url = `${this.baseUrl}${path}`;
 
     const response = await fetch(url, {

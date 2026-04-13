@@ -49,10 +49,7 @@ function membershipToOrg(membership: Membership): Organization {
 /**
  * Convert membership to OrganizationMembership
  */
-function toOrgMembership(
-  membership: Membership,
-  org: Organization
-): OrganizationMembership {
+function toOrgMembership(membership: Membership, org: Organization): OrganizationMembership {
   return {
     id: membership.id,
     organization: org,
@@ -138,9 +135,7 @@ export function TenantProvider({
       return null;
     }
 
-    const userMembership = memberships.find(
-      (m) => m.organization_id === currentOrg.id
-    );
+    const userMembership = memberships.find((m) => m.organization_id === currentOrg.id);
 
     if (!userMembership) {
       return null;
@@ -175,9 +170,7 @@ export function TenantProvider({
       }
 
       // Emit event
-      window.dispatchEvent(
-        new CustomEvent(ORG_CHANGE_EVENT, { detail: { org } })
-      );
+      window.dispatchEvent(new CustomEvent(ORG_CHANGE_EVENT, { detail: { org } }));
 
       // Callback
       onOrgChange?.(org);
@@ -208,9 +201,7 @@ export function TenantProvider({
     [currentOrg, setCurrentOrg, organizations, membership, isPlatformAdmin, isLoading]
   );
 
-  return (
-    <TenantContext.Provider value={value}>{children}</TenantContext.Provider>
-  );
+  return <TenantContext.Provider value={value}>{children}</TenantContext.Provider>;
 }
 
 /**

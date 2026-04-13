@@ -51,6 +51,7 @@
 ### 1.2 Auth Package
 
 - [x] Create package structure
+
   ```
   packages/auth/
   ├── src/
@@ -107,6 +108,7 @@
 ### 1.3 Tenant Package
 
 - [x] Create package structure
+
   ```
   packages/tenant/
   ├── src/
@@ -158,6 +160,7 @@
 ### 2.1 API Client Package
 
 - [x] Create package structure
+
   ```
   packages/api-client/
   ├── src/
@@ -202,6 +205,7 @@
 ### 2.2 Telemetry Package
 
 - [x] Create package structure
+
   ```
   packages/telemetry/
   ├── src/
@@ -259,6 +263,7 @@
 ### 3.1 Core Shell Components
 
 - [x] Create package structure
+
   ```
   packages/shell/
   ├── src/
@@ -367,6 +372,7 @@
 ### 4.1 Authentication Pages
 
 - [x] Create package structure
+
   ```
   packages/pages/
   ├── src/
@@ -477,6 +483,7 @@
 ### 5.1 Design Tokens Package
 
 - [x] Create package structure
+
   ```
   packages/design-tokens/
   ├── src/
@@ -576,6 +583,7 @@
 ### 6.2 Frontend Migration
 
 - [ ] Install packages
+
   ```bash
   pnpm add @coreforge/shell @coreforge/auth @coreforge/tenant @coreforge/api-client @coreforge/telemetry @coreforge/design-tokens
   ```
@@ -710,9 +718,9 @@
 
 ## Bugs & Issues
 
-| ID | Description | Status | Package |
-|----|-------------|--------|---------|
-| | | | |
+| ID  | Description | Status | Package |
+| --- | ----------- | ------ | ------- |
+|     |             |        |         |
 
 ---
 
@@ -720,11 +728,11 @@
 
 ### Decision Log
 
-| Date | Decision | Rationale |
-|------|----------|-----------|
-| | Use design-system-spec for tokens | LLM-friendly, structured, generates multiple formats |
-| | Slot-based customization | Flexible without exposing internals |
-| | BFF pattern mandatory | Security best practice, no token exposure |
+| Date | Decision                          | Rationale                                            |
+| ---- | --------------------------------- | ---------------------------------------------------- |
+|      | Use design-system-spec for tokens | LLM-friendly, structured, generates multiple formats |
+|      | Slot-based customization          | Flexible without exposing internals                  |
+|      | BFF pattern mandatory             | Security best practice, no token exposure            |
 
 ### Open Questions
 

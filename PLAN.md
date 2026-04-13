@@ -17,6 +17,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Add Changesets for versioning
 
 **Deliverables:**
+
 - Working monorepo structure
 - CI pipeline running lint/test/build
 
@@ -32,10 +33,12 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Create package documentation
 
 **Source Reference:**
+
 - `./reference/app1-ui/src/contexts/AuthContext.tsx`
 - `./reference/app1-ui/src/components/ProtectedRoute.tsx`
 
 **Deliverables:**
+
 - Published `@coreforge/auth` package
 - Working example in docs
 
@@ -51,6 +54,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Write unit tests
 
 **Deliverables:**
+
 - Published `@coreforge/tenant` package
 - Multi-org support working
 
@@ -67,6 +71,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Write unit tests
 
 **Deliverables:**
+
 - Published `@coreforge/api-client` package
 - Integration guide for TanStack Query
 
@@ -81,6 +86,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Write unit tests
 
 **Deliverables:**
+
 - Published `@coreforge/telemetry` package
 - Event schema documentation
 
@@ -97,6 +103,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Write component tests
 
 **Deliverables:**
+
 - Basic shell layout working
 - Responsive behavior
 
@@ -109,6 +116,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Write component tests
 
 **Deliverables:**
+
 - User menu with account switching
 - Organization switching working
 
@@ -121,6 +129,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Document customization API
 
 **Deliverables:**
+
 - Fully customizable shell
 - Documentation for all customization options
 
@@ -134,6 +143,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Implement `<ErrorPage>` (500)
 
 **Deliverables:**
+
 - Complete auth flow pages
 - Error boundary integration
 
@@ -146,6 +156,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Add account linking/unlinking functionality
 
 **Deliverables:**
+
 - Complete user settings
 - Linked accounts management
 
@@ -158,6 +169,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Implement member removal
 
 **Deliverables:**
+
 - Organization management pages
 - Member invitation system
 
@@ -169,6 +181,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Add platform settings
 
 **Deliverables:**
+
 - SaaS admin dashboard
 - Cross-tenant visibility
 
@@ -184,6 +197,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Add LLM context to all component specs
 
 **Deliverables:**
+
 - Complete DSS specification
 - LLM-ready component documentation
 
@@ -196,6 +210,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Generate LLM context document
 
 **Deliverables:**
+
 - Automated token generation
 - Multi-format exports
 
@@ -207,6 +222,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Test contrast ratios
 
 **Deliverables:**
+
 - Dark mode support
 - Theme persistence
 
@@ -234,6 +250,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Security review
 
 **Deliverables:**
+
 - App2 using CoreForge Web
 - Security issues resolved
 
@@ -254,6 +271,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Verify all tests pass
 
 **Deliverables:**
+
 - App1-UI using shared packages
 - Reduced code duplication
 
@@ -273,6 +291,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Track dashboard operations
 
 **Deliverables:**
+
 - App3 with full CoreForge Web integration
 
 ## Phase 9: Documentation & Polish (Week 15-16)
@@ -293,6 +312,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 - [ ] Create integration examples
 
 **Deliverables:**
+
 - Published documentation site
 - Example application
 - Storybook component explorer
@@ -304,6 +324,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 ### Risk: Shell too opinionated
 
 **Mitigation:**
+
 - Slot-based customization
 - Composable components
 - Allow overriding any sub-component
@@ -311,6 +332,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 ### Risk: Breaking changes during migration
 
 **Mitigation:**
+
 - Maintain backwards compatibility
 - Use feature flags during transition
 - Test extensively before merging
@@ -318,6 +340,7 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 ### Risk: Design system complexity
 
 **Mitigation:**
+
 - Use design-system-spec for structured definitions
 - Generate tokens automatically
 - Provide sensible defaults
@@ -326,15 +349,15 @@ This document outlines the phased implementation plan for CoreForge Web, an open
 
 ## Success Criteria
 
-| Criterion | Target | Verification |
-|-----------|--------|--------------|
-| All 3 apps using shared shell | 100% | Package imports in each app |
-| App2 security issue fixed | Yes | No tokens in localStorage |
-| Test coverage | >80% | CI coverage reports |
-| Bundle size targets met | Yes | Bundle analyzer |
-| Documentation complete | Yes | All packages documented |
-| Shell customization time | < 30 min | User testing |
-| WCAG 2.1 AA compliance | Yes | Accessibility audit |
+| Criterion                     | Target   | Verification                |
+| ----------------------------- | -------- | --------------------------- |
+| All 3 apps using shared shell | 100%     | Package imports in each app |
+| App2 security issue fixed     | Yes      | No tokens in localStorage   |
+| Test coverage                 | >80%     | CI coverage reports         |
+| Bundle size targets met       | Yes      | Bundle analyzer             |
+| Documentation complete        | Yes      | All packages documented     |
+| Shell customization time      | < 30 min | User testing                |
+| WCAG 2.1 AA compliance        | Yes      | Accessibility audit         |
 
 ---
 

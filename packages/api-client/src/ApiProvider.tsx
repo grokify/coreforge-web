@@ -1,11 +1,4 @@
-import {
-  createContext,
-  useContext,
-  useState,
-  useCallback,
-  useMemo,
-  type ReactNode,
-} from 'react';
+import { createContext, useContext, useState, useCallback, useMemo, type ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ApiClient } from './client';
 import type { ApiClientConfig, ApiClientContextValue, ApiClientInterface } from './types';
@@ -83,9 +76,7 @@ export function ApiProvider({
   config,
   queryClient: providedQueryClient,
 }: ApiProviderProps) {
-  const [currentOrgId, setCurrentOrgIdState] = useState<string | null>(
-    config.currentOrgId || null
-  );
+  const [currentOrgId, setCurrentOrgIdState] = useState<string | null>(config.currentOrgId || null);
 
   // Create or use provided QueryClient
   const queryClient = useMemo(

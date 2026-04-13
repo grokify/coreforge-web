@@ -1020,10 +1020,7 @@ export function RequireRole({
       "Multiple UserMenu components on same page",
       "Hiding logout option"
     ],
-    "examples": [
-      "<UserMenu />",
-      "<UserMenu hideLinkedAccounts />"
-    ]
+    "examples": ["<UserMenu />", "<UserMenu hideLinkedAccounts />"]
   },
   "accessibility": {
     "role": "menu",
@@ -1138,15 +1135,15 @@ export default defineConfig({
 
 ## Performance Targets
 
-| Package | Gzipped Size | Load Time Impact |
-|---------|--------------|------------------|
-| @coreforge/shell | < 15KB | < 20ms |
-| @coreforge/pages | < 10KB | < 15ms |
-| @coreforge/auth | < 5KB | < 10ms |
-| @coreforge/tenant | < 3KB | < 5ms |
-| @coreforge/api-client | < 3KB | < 5ms |
-| @coreforge/telemetry | < 4KB | < 5ms |
-| @coreforge/design-tokens | < 2KB | < 5ms |
+| Package                  | Gzipped Size | Load Time Impact |
+| ------------------------ | ------------ | ---------------- |
+| @coreforge/shell         | < 15KB       | < 20ms           |
+| @coreforge/pages         | < 10KB       | < 15ms           |
+| @coreforge/auth          | < 5KB        | < 10ms           |
+| @coreforge/tenant        | < 3KB        | < 5ms            |
+| @coreforge/api-client    | < 3KB        | < 5ms            |
+| @coreforge/telemetry     | < 4KB        | < 5ms            |
+| @coreforge/design-tokens | < 2KB        | < 5ms            |
 
 ## Accessibility Requirements
 

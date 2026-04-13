@@ -83,11 +83,7 @@ export function Breadcrumbs({
 
   if (maxItems && items.length > maxItems) {
     collapsed = true;
-    displayItems = [
-      items[0],
-      { label: '...', href: undefined },
-      ...items.slice(-(maxItems - 2)),
-    ];
+    displayItems = [items[0], { label: '...', href: undefined }, ...items.slice(-(maxItems - 2))];
   }
 
   return (

@@ -44,10 +44,7 @@ const defaultActions: UserAction[] = [
  * />
  * ```
  */
-export function UserMenu({
-  actions = defaultActions,
-  onNavigate,
-}: UserMenuProps): ReactNode {
+export function UserMenu({ actions = defaultActions, onNavigate }: UserMenuProps): ReactNode {
   const { user, logout, isLoading } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);

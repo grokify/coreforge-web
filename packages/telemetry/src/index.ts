@@ -46,23 +46,14 @@
  */
 
 // Provider
-export {
-  TelemetryProvider,
-  useTelemetry,
-  useTelemetryOptional,
-} from './TelemetryProvider';
+export { TelemetryProvider, useTelemetry, useTelemetryOptional } from './TelemetryProvider';
 export type { TelemetryProviderProps } from './TelemetryProvider';
 
 // Error boundary
 export { ErrorBoundary, DefaultErrorFallback } from './ErrorBoundary';
 
 // Telemetry client
-export {
-  TelemetryClient,
-  createTelemetryClient,
-  ConsoleAdapter,
-  HttpAdapter,
-} from './telemetry';
+export { TelemetryClient, createTelemetryClient, ConsoleAdapter, HttpAdapter } from './telemetry';
 
 // Hooks
 export {

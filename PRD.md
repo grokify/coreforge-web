@@ -16,11 +16,11 @@ CoreForge Web is an open-source React framework providing a complete **web appli
 
 ### Target Applications
 
-| Application | Domain | Current State |
-|-------------|--------|---------------|
-| App1-UI | Learning Management System | React 19, BFF auth, TanStack Query |
-| App2-web | Professional Credibility | React 18, localStorage tokens, Zustand |
-| App3 | Dashboard Builder | React 18, no auth implemented |
+| Application | Domain                     | Current State                          |
+| ----------- | -------------------------- | -------------------------------------- |
+| App1-UI     | Learning Management System | React 19, BFF auth, TanStack Query     |
+| App2-web    | Professional Credibility   | React 18, localStorage tokens, Zustand |
+| App3        | Dashboard Builder          | React 18, no auth implemented          |
 
 ## Goals
 
@@ -128,135 +128,135 @@ Organization Level (Tenant Scope)
 
 #### FR-1: Web Shell Package (`@coreforge/shell`)
 
-| ID | Requirement | Priority |
-|----|-------------|----------|
-| FR-1.1 | Provide `<AppShell>` component with configurable layout | P0 |
-| FR-1.2 | Provide `<TopBar>` with logo, search slot, and user menu | P0 |
-| FR-1.3 | Provide `<LeftNav>` with collapsible navigation and org switcher | P0 |
-| FR-1.4 | Provide `<UserMenu>` with avatar, account switching, logout | P0 |
-| FR-1.5 | Provide `<OrgSwitcher>` for multi-org users | P0 |
-| FR-1.6 | Support responsive collapse (mobile hamburger menu) | P1 |
-| FR-1.7 | Support custom branding (logo, colors via design tokens) | P1 |
-| FR-1.8 | Emit telemetry events for navigation, org switches | P0 |
+| ID     | Requirement                                                      | Priority |
+| ------ | ---------------------------------------------------------------- | -------- |
+| FR-1.1 | Provide `<AppShell>` component with configurable layout          | P0       |
+| FR-1.2 | Provide `<TopBar>` with logo, search slot, and user menu         | P0       |
+| FR-1.3 | Provide `<LeftNav>` with collapsible navigation and org switcher | P0       |
+| FR-1.4 | Provide `<UserMenu>` with avatar, account switching, logout      | P0       |
+| FR-1.5 | Provide `<OrgSwitcher>` for multi-org users                      | P0       |
+| FR-1.6 | Support responsive collapse (mobile hamburger menu)              | P1       |
+| FR-1.7 | Support custom branding (logo, colors via design tokens)         | P1       |
+| FR-1.8 | Emit telemetry events for navigation, org switches               | P0       |
 
 #### FR-2: Default Pages Package (`@coreforge/pages`)
 
-| ID | Requirement | Priority |
-|----|-------------|----------|
-| FR-2.1 | Provide default `<HomePage>` (dashboard skeleton) | P1 |
-| FR-2.2 | Provide `<UserSettingsPage>` (profile, password, linked accounts) | P0 |
-| FR-2.3 | Provide `<OrgSettingsPage>` (org profile, branding) | P1 |
-| FR-2.4 | Provide `<OrgMembersPage>` (member list, invite, roles) | P1 |
-| FR-2.5 | Provide `<LinkedAccountsPage>` for managing OAuth connections | P1 |
-| FR-2.6 | Provide `<NotFoundPage>` (404) and `<ErrorPage>` (500) | P0 |
-| FR-2.7 | Provide `<LoginPage>` with OAuth provider buttons | P0 |
-| FR-2.8 | Provide `<PlatformAdminPage>` (for SaaS admins) | P2 |
+| ID     | Requirement                                                       | Priority |
+| ------ | ----------------------------------------------------------------- | -------- |
+| FR-2.1 | Provide default `<HomePage>` (dashboard skeleton)                 | P1       |
+| FR-2.2 | Provide `<UserSettingsPage>` (profile, password, linked accounts) | P0       |
+| FR-2.3 | Provide `<OrgSettingsPage>` (org profile, branding)               | P1       |
+| FR-2.4 | Provide `<OrgMembersPage>` (member list, invite, roles)           | P1       |
+| FR-2.5 | Provide `<LinkedAccountsPage>` for managing OAuth connections     | P1       |
+| FR-2.6 | Provide `<NotFoundPage>` (404) and `<ErrorPage>` (500)            | P0       |
+| FR-2.7 | Provide `<LoginPage>` with OAuth provider buttons                 | P0       |
+| FR-2.8 | Provide `<PlatformAdminPage>` (for SaaS admins)                   | P2       |
 
 #### FR-3: Authentication Package (`@coreforge/auth`)
 
-| ID | Requirement | Priority |
-|----|-------------|----------|
-| FR-3.1 | Provide `AuthProvider` React context with BFF session management | P0 |
-| FR-3.2 | Provide `useAuth` hook returning user, isAuthenticated, isLoading, logout, refreshUser | P0 |
-| FR-3.3 | Provide `ProtectedRoute` component that redirects unauthenticated users | P0 |
-| FR-3.4 | Support session-expired event handling with automatic redirect | P0 |
-| FR-3.5 | Support multiple OAuth providers (GitHub, Google, CoreControl) | P1 |
-| FR-3.6 | Provide `usePermissions` hook for role-based UI rendering | P1 |
-| FR-3.7 | Provide `useLinkedAccounts` hook for account switching | P1 |
-| FR-3.8 | Provide `useCurrentOrg` hook for organization context | P0 |
+| ID     | Requirement                                                                            | Priority |
+| ------ | -------------------------------------------------------------------------------------- | -------- |
+| FR-3.1 | Provide `AuthProvider` React context with BFF session management                       | P0       |
+| FR-3.2 | Provide `useAuth` hook returning user, isAuthenticated, isLoading, logout, refreshUser | P0       |
+| FR-3.3 | Provide `ProtectedRoute` component that redirects unauthenticated users                | P0       |
+| FR-3.4 | Support session-expired event handling with automatic redirect                         | P0       |
+| FR-3.5 | Support multiple OAuth providers (GitHub, Google, CoreControl)                         | P1       |
+| FR-3.6 | Provide `usePermissions` hook for role-based UI rendering                              | P1       |
+| FR-3.7 | Provide `useLinkedAccounts` hook for account switching                                 | P1       |
+| FR-3.8 | Provide `useCurrentOrg` hook for organization context                                  | P0       |
 
 #### FR-4: Multi-Tenant Package (`@coreforge/tenant`)
 
-| ID | Requirement | Priority |
-|----|-------------|----------|
-| FR-4.1 | Provide `TenantProvider` for organization context | P0 |
-| FR-4.2 | Provide `useOrganization` hook for current org data | P0 |
-| FR-4.3 | Provide `useOrganizations` hook for user's org list | P0 |
-| FR-4.4 | Provide `useMembership` hook for current user's role in org | P0 |
-| FR-4.5 | Provide `<RequireRole>` component for role-gated UI | P1 |
-| FR-4.6 | Support platform-level (non-tenant) admin context | P1 |
-| FR-4.7 | Emit telemetry events for org context changes | P0 |
+| ID     | Requirement                                                 | Priority |
+| ------ | ----------------------------------------------------------- | -------- |
+| FR-4.1 | Provide `TenantProvider` for organization context           | P0       |
+| FR-4.2 | Provide `useOrganization` hook for current org data         | P0       |
+| FR-4.3 | Provide `useOrganizations` hook for user's org list         | P0       |
+| FR-4.4 | Provide `useMembership` hook for current user's role in org | P0       |
+| FR-4.5 | Provide `<RequireRole>` component for role-gated UI         | P1       |
+| FR-4.6 | Support platform-level (non-tenant) admin context           | P1       |
+| FR-4.7 | Emit telemetry events for org context changes               | P0       |
 
 #### FR-5: API Client Package (`@coreforge/api-client`)
 
-| ID | Requirement | Priority |
-|----|-------------|----------|
-| FR-5.1 | Provide typed fetch wrapper with automatic credential inclusion | P0 |
-| FR-5.2 | Support request/response interceptors | P0 |
-| FR-5.3 | Automatic token refresh on 401 responses | P0 |
-| FR-5.4 | Include organization context header automatically | P0 |
-| FR-5.5 | Integration with TanStack Query | P1 |
-| FR-5.6 | Request deduplication for identical concurrent requests | P2 |
+| ID     | Requirement                                                     | Priority |
+| ------ | --------------------------------------------------------------- | -------- |
+| FR-5.1 | Provide typed fetch wrapper with automatic credential inclusion | P0       |
+| FR-5.2 | Support request/response interceptors                           | P0       |
+| FR-5.3 | Automatic token refresh on 401 responses                        | P0       |
+| FR-5.4 | Include organization context header automatically               | P0       |
+| FR-5.5 | Integration with TanStack Query                                 | P1       |
+| FR-5.6 | Request deduplication for identical concurrent requests         | P2       |
 
 #### FR-6: Telemetry Package (`@coreforge/telemetry`)
 
-| ID | Requirement | Priority |
-|----|-------------|----------|
-| FR-6.1 | Define ProductGraph-compatible event schema | P0 |
-| FR-6.2 | Provide `useInstrumented` hook for component-level tracking | P0 |
-| FR-6.3 | Automatic page view tracking on route changes | P1 |
-| FR-6.4 | Automatic click tracking with component attribution | P1 |
-| FR-6.5 | State change tracking with before/after snapshots | P1 |
-| FR-6.6 | Pluggable event sinks (console, ProductGraph, third-party) | P1 |
-| FR-6.7 | No-op mode for development/testing | P0 |
-| FR-6.8 | Include org_id in all events automatically | P0 |
+| ID     | Requirement                                                 | Priority |
+| ------ | ----------------------------------------------------------- | -------- |
+| FR-6.1 | Define ProductGraph-compatible event schema                 | P0       |
+| FR-6.2 | Provide `useInstrumented` hook for component-level tracking | P0       |
+| FR-6.3 | Automatic page view tracking on route changes               | P1       |
+| FR-6.4 | Automatic click tracking with component attribution         | P1       |
+| FR-6.5 | State change tracking with before/after snapshots           | P1       |
+| FR-6.6 | Pluggable event sinks (console, ProductGraph, third-party)  | P1       |
+| FR-6.7 | No-op mode for development/testing                          | P0       |
+| FR-6.8 | Include org_id in all events automatically                  | P0       |
 
 #### FR-7: Design Tokens Package (`@coreforge/design-tokens`)
 
-| ID | Requirement | Priority |
-|----|-------------|----------|
-| FR-7.1 | Define tokens via `design-system-spec` format | P0 |
-| FR-7.2 | Provide color palette tokens (brand, semantic, neutral) | P1 |
-| FR-7.3 | Provide typography scale tokens | P1 |
-| FR-7.4 | Provide spacing scale tokens | P1 |
-| FR-7.5 | Export as CSS variables and Tailwind preset | P1 |
-| FR-7.6 | Support dark mode variants | P2 |
-| FR-7.7 | Generate LLM context for AI-assisted development | P1 |
+| ID     | Requirement                                             | Priority |
+| ------ | ------------------------------------------------------- | -------- |
+| FR-7.1 | Define tokens via `design-system-spec` format           | P0       |
+| FR-7.2 | Provide color palette tokens (brand, semantic, neutral) | P1       |
+| FR-7.3 | Provide typography scale tokens                         | P1       |
+| FR-7.4 | Provide spacing scale tokens                            | P1       |
+| FR-7.5 | Export as CSS variables and Tailwind preset             | P1       |
+| FR-7.6 | Support dark mode variants                              | P2       |
+| FR-7.7 | Generate LLM context for AI-assisted development        | P1       |
 
 ### Non-Functional Requirements
 
-| ID | Requirement | Target |
-|----|-------------|--------|
-| NFR-1 | Bundle size (shell package) | < 15KB gzipped |
-| NFR-2 | Bundle size (auth package) | < 5KB gzipped |
-| NFR-3 | Bundle size (telemetry package) | < 3KB gzipped |
-| NFR-4 | TypeScript coverage | 100% |
-| NFR-5 | Test coverage | > 80% |
-| NFR-6 | React version support | 18.x, 19.x |
-| NFR-7 | Accessibility | WCAG 2.1 AA |
-| NFR-8 | First contentful paint | < 1.5s |
+| ID    | Requirement                     | Target         |
+| ----- | ------------------------------- | -------------- |
+| NFR-1 | Bundle size (shell package)     | < 15KB gzipped |
+| NFR-2 | Bundle size (auth package)      | < 5KB gzipped  |
+| NFR-3 | Bundle size (telemetry package) | < 3KB gzipped  |
+| NFR-4 | TypeScript coverage             | 100%           |
+| NFR-5 | Test coverage                   | > 80%          |
+| NFR-6 | React version support           | 18.x, 19.x     |
+| NFR-7 | Accessibility                   | WCAG 2.1 AA    |
+| NFR-8 | First contentful paint          | < 1.5s         |
 
 ## Success Metrics
 
-| Metric | Current | Target | Timeline |
-|--------|---------|--------|----------|
-| Apps using shared shell | 0 | 3 | Q3 2025 |
-| Auth-related security issues | 1 (App2) | 0 | Q2 2025 |
-| Instrumented user events/day | 0 | 10K+ | Q3 2025 |
-| Developer onboarding time | ~2 days | < 4 hours | Q2 2025 |
-| Shell customization time | N/A | < 30 min | Q3 2025 |
+| Metric                       | Current  | Target    | Timeline |
+| ---------------------------- | -------- | --------- | -------- |
+| Apps using shared shell      | 0        | 3         | Q3 2025  |
+| Auth-related security issues | 1 (App2) | 0         | Q2 2025  |
+| Instrumented user events/day | 0        | 10K+      | Q3 2025  |
+| Developer onboarding time    | ~2 days  | < 4 hours | Q2 2025  |
+| Shell customization time     | N/A      | < 30 min  | Q3 2025  |
 
 ## Risks and Mitigations
 
-| Risk | Impact | Probability | Mitigation |
-|------|--------|-------------|------------|
-| Over-abstraction | Apps become coupled, hard to customize | Medium | Composable components, slot-based customization |
-| Migration disruption | Breaking changes during adoption | Medium | Incremental adoption, maintain backwards compatibility |
-| ProductGraph delay | Telemetry hooks unused | Low | Hooks work standalone for basic analytics |
-| Design system complexity | Tokens hard to customize | Medium | Use design-system-spec for structured definitions |
+| Risk                     | Impact                                 | Probability | Mitigation                                             |
+| ------------------------ | -------------------------------------- | ----------- | ------------------------------------------------------ |
+| Over-abstraction         | Apps become coupled, hard to customize | Medium      | Composable components, slot-based customization        |
+| Migration disruption     | Breaking changes during adoption       | Medium      | Incremental adoption, maintain backwards compatibility |
+| ProductGraph delay       | Telemetry hooks unused                 | Low         | Hooks work standalone for basic analytics              |
+| Design system complexity | Tokens hard to customize               | Medium      | Use design-system-spec for structured definitions      |
 
 ## Timeline
 
-| Phase | Deliverables | Target |
-|-------|--------------|--------|
-| Phase 1 | Auth + Tenant packages | Week 1-3 |
-| Phase 2 | Shell components (TopBar, LeftNav, UserMenu) | Week 3-5 |
-| Phase 3 | Default pages (Settings, Members, Login) | Week 5-7 |
-| Phase 4 | API client + Telemetry packages | Week 7-9 |
-| Phase 5 | Design tokens (via design-system-spec) | Week 9-10 |
-| Phase 6 | App2 migration | Week 10-12 |
-| Phase 7 | App1 alignment | Week 12-14 |
-| Phase 8 | App3 integration | Week 14-15 |
+| Phase   | Deliverables                                 | Target     |
+| ------- | -------------------------------------------- | ---------- |
+| Phase 1 | Auth + Tenant packages                       | Week 1-3   |
+| Phase 2 | Shell components (TopBar, LeftNav, UserMenu) | Week 3-5   |
+| Phase 3 | Default pages (Settings, Members, Login)     | Week 5-7   |
+| Phase 4 | API client + Telemetry packages              | Week 7-9   |
+| Phase 5 | Design tokens (via design-system-spec)       | Week 9-10  |
+| Phase 6 | App2 migration                               | Week 10-12 |
+| Phase 7 | App1 alignment                               | Week 12-14 |
+| Phase 8 | App3 integration                             | Week 14-15 |
 
 ## Appendix
 
@@ -331,20 +331,17 @@ function MyApp() {
       // Branding
       logo={<MyLogo />}
       brandName="App1"
-
       // Navigation (app-specific)
       navItems={[
         { label: 'Dashboard', href: '/', icon: HomeIcon },
         { label: 'Courses', href: '/courses', icon: BookIcon },
         { label: 'Students', href: '/students', icon: UsersIcon },
       ]}
-
       // Footer navigation
       footerNavItems={[
         { label: 'Settings', href: '/settings', icon: SettingsIcon },
         { label: 'Help', href: '/help', icon: HelpIcon },
       ]}
-
       // Slots for customization
       topBarRight={<NotificationBell />}
       leftNavBottom={<StorageUsage />}
@@ -385,11 +382,11 @@ function MyApp() {
 
 ### E. Related Projects
 
-| Project | Relationship |
-|---------|--------------|
-| [CoreForge](https://github.com/grokify/coreforge) | Backend platform (identity, auth, marketplace) |
-| [ProductGraph](https://github.com/plexusone/productgraph) | Telemetry sink, journey analytics |
-| [design-system-spec](https://github.com/plexusone/design-system-spec) | Design token format specification |
-| [App1](https://github.com/grokify/app1) | Target application (LMS) |
-| [App2](https://github.com/app2/app2-web) | Target application (credentials) |
-| [App3](https://github.com/plexusone/app3) | Target application (dashboards) |
+| Project                                                               | Relationship                                   |
+| --------------------------------------------------------------------- | ---------------------------------------------- |
+| [CoreForge](https://github.com/grokify/coreforge)                     | Backend platform (identity, auth, marketplace) |
+| [ProductGraph](https://github.com/plexusone/productgraph)             | Telemetry sink, journey analytics              |
+| [design-system-spec](https://github.com/plexusone/design-system-spec) | Design token format specification              |
+| [App1](https://github.com/grokify/app1)                               | Target application (LMS)                       |
+| [App2](https://github.com/app2/app2-web)                              | Target application (credentials)               |
+| [App3](https://github.com/plexusone/app3)                             | Target application (dashboards)                |

@@ -113,9 +113,7 @@ export function useRoleCheck() {
       return false;
     }
 
-    const minRequiredLevel = Math.min(
-      ...requiredRoles.map((r) => ROLE_LEVELS[r])
-    );
+    const minRequiredLevel = Math.min(...requiredRoles.map((r) => ROLE_LEVELS[r]));
     const userLevel = ROLE_LEVELS[membership.role as Role];
 
     return userLevel >= minRequiredLevel;
@@ -135,9 +133,7 @@ export function useRoleCheck() {
       return false;
     }
 
-    const minRequiredLevel = Math.min(
-      ...requiredRoles.map((r) => ROLE_LEVELS[r])
-    );
+    const minRequiredLevel = Math.min(...requiredRoles.map((r) => ROLE_LEVELS[r]));
     const userLevel = ROLE_LEVELS[membership.role as Role];
 
     return userLevel >= minRequiredLevel;

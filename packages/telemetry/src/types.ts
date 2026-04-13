@@ -1,12 +1,7 @@
 /**
  * Telemetry event types
  */
-export type TelemetryEventType =
-  | 'page_view'
-  | 'action'
-  | 'error'
-  | 'performance'
-  | 'custom';
+export type TelemetryEventType = 'page_view' | 'action' | 'error' | 'performance' | 'custom';
 
 /**
  * Base telemetry event
@@ -221,19 +216,12 @@ export interface TelemetryContextValue {
   /**
    * Track a user action
    */
-  trackAction: (
-    category: string,
-    action: string,
-    properties?: Record<string, unknown>
-  ) => void;
+  trackAction: (category: string, action: string, properties?: Record<string, unknown>) => void;
 
   /**
    * Track an error
    */
-  trackError: (
-    error: Error,
-    context?: Record<string, unknown>
-  ) => void;
+  trackError: (error: Error, context?: Record<string, unknown>) => void;
 
   /**
    * Track a performance metric

@@ -23,10 +23,7 @@ import type { PerformanceTiming } from './types';
  * }
  * ```
  */
-export function usePageView(
-  path: string,
-  properties?: Record<string, unknown>
-): void {
+export function usePageView(path: string, properties?: Record<string, unknown>): void {
   const telemetry = useTelemetryOptional();
 
   useEffect(() => {
@@ -184,9 +181,7 @@ export function useFormTracker(formName: string) {
 
   const success = useCallback(
     (properties?: Record<string, unknown>) => {
-      const duration = startTime.current
-        ? performance.now() - startTime.current
-        : undefined;
+      const duration = startTime.current ? performance.now() - startTime.current : undefined;
 
       telemetry?.trackAction('form', 'success', {
         form: formName,
@@ -201,9 +196,7 @@ export function useFormTracker(formName: string) {
 
   const error = useCallback(
     (err: Error, properties?: Record<string, unknown>) => {
-      const duration = startTime.current
-        ? performance.now() - startTime.current
-        : undefined;
+      const duration = startTime.current ? performance.now() - startTime.current : undefined;
 
       telemetry?.trackAction('form', 'error', {
         form: formName,
@@ -247,9 +240,7 @@ export function useFormTracker(formName: string) {
  * }
  * ```
  */
-export function useIdentify(
-  user: { id: string; email?: string; name?: string } | null
-): void {
+export function useIdentify(user: { id: string; email?: string; name?: string } | null): void {
   const telemetry = useTelemetryOptional();
 
   useEffect(() => {
@@ -275,9 +266,7 @@ export function useIdentify(
  * }
  * ```
  */
-export function useOrgContext(
-  org: { id: string; name?: string; type?: string } | null
-): void {
+export function useOrgContext(org: { id: string; name?: string; type?: string } | null): void {
   const telemetry = useTelemetryOptional();
 
   useEffect(() => {
@@ -359,20 +348,14 @@ export function useWebVitals(): void {
     if (typeof window === 'undefined') return;
 
     // Track navigation timing
-    const navigation = performance.getEntriesByType(
-      'navigation'
-    )[0] as PerformanceNavigationTiming;
+    const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
 
     if (navigation) {
       // Time to First Byte
       mark('ttfb', navigation.responseStart - navigation.requestStart, 'ms');
 
       // DOM Content Loaded
-      mark(
-        'dcl',
-        navigation.domContentLoadedEventEnd - navigation.fetchStart,
-        'ms'
-      );
+      mark('dcl', navigation.domContentLoadedEventEnd - navigation.fetchStart, 'ms');
 
       // Load time
       mark('load', navigation.loadEventEnd - navigation.fetchStart, 'ms');
@@ -394,7 +377,9 @@ export function useWebVitals(): void {
     // Observe First Input Delay
     const fidObserver = new PerformanceObserver((list) => {
       const entries = list.getEntries();
-      const firstEntry = entries[0] as unknown as { processingStart: number; startTime: number } | undefined;
+      const firstEntry = entries[0] as unknown as
+        | { processingStart: number; startTime: number }
+        | undefined;
       if (firstEntry) {
         mark('fid', firstEntry.processingStart - firstEntry.startTime, 'ms');
       }

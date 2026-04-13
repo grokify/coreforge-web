@@ -70,7 +70,7 @@ function NavItemComponent({
     return null;
   }
 
-  const isActive = item.isActive ?? (currentPath === item.href);
+  const isActive = item.isActive ?? currentPath === item.href;
 
   const handleClick = (event: React.MouseEvent) => {
     if (item.external) return; // Let browser handle external links
@@ -96,9 +96,7 @@ function NavItemComponent({
         gap: '12px',
         padding: isCollapsed ? '10px' : '10px 12px',
         marginBottom: '2px',
-        backgroundColor: isActive
-          ? 'var(--cf-color-selected-bg, #eff6ff)'
-          : 'transparent',
+        backgroundColor: isActive ? 'var(--cf-color-selected-bg, #eff6ff)' : 'transparent',
         color: isActive
           ? 'var(--cf-color-brand-primary, #2563eb)'
           : 'var(--cf-color-fg-secondary, #52525b)',

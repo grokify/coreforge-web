@@ -73,10 +73,7 @@ export {
 } from './hooks';
 
 // Types
-export {
-  ApiError,
-  createQueryKeys,
-} from './types';
+export { ApiError, createQueryKeys } from './types';
 export type {
   HttpMethod,
   ApiErrorResponse,

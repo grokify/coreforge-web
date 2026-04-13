@@ -36,12 +36,7 @@
  */
 
 // Provider and main hook
-export {
-  TenantProvider,
-  useTenant,
-  useTenantOptional,
-  ORG_CHANGE_EVENT,
-} from './TenantProvider';
+export { TenantProvider, useTenant, useTenantOptional, ORG_CHANGE_EVENT } from './TenantProvider';
 export type { TenantProviderProps } from './TenantProvider';
 
 // Convenience hooks

@@ -66,22 +66,11 @@ export { radii, radiusPresets } from './radii';
 export type { RadiusKey, RadiusValue } from './radii';
 
 // Breakpoints
-export {
-  breakpoints,
-  mediaQueries,
-  containers,
-  layoutWidths,
-} from './breakpoints';
+export { breakpoints, mediaQueries, containers, layoutWidths } from './breakpoints';
 export type { BreakpointKey, ContainerKey } from './breakpoints';
 
 // Animations
-export {
-  durations,
-  easings,
-  transitions,
-  keyframes,
-  animations,
-} from './animations';
+export { durations, easings, transitions, keyframes, animations } from './animations';
 export type { DurationKey, EasingKey, TransitionKey } from './animations';
 
 // Z-index

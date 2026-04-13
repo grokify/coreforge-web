@@ -135,9 +135,7 @@ export function DefaultErrorFallback({
         margin: '20px',
       }}
     >
-      <h2 style={{ color: '#dc2626', margin: '0 0 10px 0' }}>
-        Something went wrong
-      </h2>
+      <h2 style={{ color: '#dc2626', margin: '0 0 10px 0' }}>Something went wrong</h2>
       <pre
         style={{
           backgroundColor: '#fee2e2',
