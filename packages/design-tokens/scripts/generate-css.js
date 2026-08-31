@@ -68,7 +68,7 @@ const css = `/**
  * Generated CSS custom properties
  *
  * Usage:
- * @import '@systemforge/design-tokens/css';
+ * @import '@plexusone/design-tokens/css';
  *
  * .my-component {
  *   color: var(--cf-color-fg-primary);

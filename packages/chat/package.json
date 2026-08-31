@@ -1,5 +1,5 @@
 {
-  "name": "@systemforge/chat",
+  "name": "@plexusone/chat",
   "version": "0.1.0",
   "description": "Chat UI components for SystemForge applications",
   "main": "./dist/index.js",
@@ -51,7 +51,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grokify/systemforge-web.git",
+    "url": "https://github.com/plexusone/systemforge-web.git",
     "directory": "packages/chat"
   }
 }

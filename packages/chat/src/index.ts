@@ -1,12 +1,12 @@
 /**
- * @systemforge/chat
+ * @plexusone/chat
  *
  * Embeddable chat components for SystemForge applications.
  *
  * @example
  * ```tsx
  * // Floating widget (like Intercom)
- * import { ChatProvider, ChatWidget } from '@systemforge/chat';
+ * import { ChatProvider, ChatWidget } from '@plexusone/chat';
  *
  * function App() {
  *   return (
@@ -21,7 +21,7 @@
  * @example
  * ```tsx
  * // Inline embed
- * import { ChatProvider, ChatEmbed } from '@systemforge/chat';
+ * import { ChatProvider, ChatEmbed } from '@plexusone/chat';
  *
  * function SupportPage() {
  *   return (

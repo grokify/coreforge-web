@@ -1,12 +1,12 @@
 /**
- * @systemforge/tenant
+ * @plexusone/tenant
  *
  * Multi-tenant context for SystemForge applications.
  *
  * @example
  * ```tsx
- * import { AuthProvider } from '@systemforge/auth';
- * import { TenantProvider, useOrganization, RequireRole } from '@systemforge/tenant';
+ * import { AuthProvider } from '@plexusone/auth';
+ * import { TenantProvider, useOrganization, RequireRole } from '@plexusone/tenant';
  *
  * function App() {
  *   return (

@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { OAuthProvider } from '@systemforge/auth';
+import type { OAuthProvider } from '@plexusone/auth';
 
 /**
  * Login page props

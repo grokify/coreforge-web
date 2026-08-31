@@ -1,5 +1,5 @@
 /**
- * @systemforge/telemetry
+ * @plexusone/telemetry
  *
  * Telemetry, error tracking, and performance monitoring for SystemForge applications.
  *
@@ -10,7 +10,7 @@
  *   ErrorBoundary,
  *   useTelemetry,
  *   usePageView,
- * } from '@systemforge/telemetry';
+ * } from '@plexusone/telemetry';
  *
  * function App() {
  *   return (
@@ -44,8 +44,8 @@
  *
  * @example ProductGraph integration
  * ```tsx
- * import { TelemetryProvider } from '@systemforge/telemetry';
- * import { ProductGraphAdapter } from '@systemforge/telemetry/adapters/productgraph';
+ * import { TelemetryProvider } from '@plexusone/telemetry';
+ * import { ProductGraphAdapter } from '@plexusone/telemetry/adapters/productgraph';
  *
  * const productGraph = new ProductGraphAdapter({
  *   projectId: 'my-project',

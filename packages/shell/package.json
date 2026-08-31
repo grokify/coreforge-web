@@ -1,5 +1,5 @@
 {
-  "name": "@systemforge/shell",
+  "name": "@plexusone/shell",
   "version": "0.1.0",
   "description": "Application shell components for SystemForge applications",
   "main": "./dist/index.js",
@@ -23,14 +23,14 @@
   },
   "peerDependencies": {
     "react": "^19.0.0",
-    "@systemforge/auth": "workspace:*",
-    "@systemforge/tenant": "workspace:*",
-    "@systemforge/ui": "workspace:*"
+    "@plexusone/auth": "workspace:*",
+    "@plexusone/tenant": "workspace:*",
+    "@plexusone/ui": "workspace:*"
   },
   "devDependencies": {
-    "@systemforge/auth": "workspace:*",
-    "@systemforge/tenant": "workspace:*",
-    "@systemforge/ui": "workspace:*",
+    "@plexusone/auth": "workspace:*",
+    "@plexusone/tenant": "workspace:*",
+    "@plexusone/ui": "workspace:*",
     "@types/react": "^19.0.0",
     "react": "^19.0.0",
     "tsup": "^8.0.1",

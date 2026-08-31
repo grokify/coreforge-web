@@ -1,11 +1,11 @@
 /**
- * @systemforge/design-tokens
+ * @plexusone/design-tokens
  *
  * Design tokens and CSS custom properties for SystemForge applications.
  *
  * @example Using tokens in JavaScript/TypeScript
  * ```ts
- * import { colors, spacing, typography } from '@systemforge/design-tokens';
+ * import { colors, spacing, typography } from '@plexusone/design-tokens';
  *
  * const styles = {
  *   color: colors.primary[500],
@@ -16,7 +16,7 @@
  *
  * @example Using CSS custom properties
  * ```css
- * @import '@systemforge/design-tokens/css';
+ * @import '@plexusone/design-tokens/css';
  *
  * .my-component {
  *   color: var(--cf-color-fg-primary);

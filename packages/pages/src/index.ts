@@ -1,11 +1,11 @@
 /**
- * @systemforge/pages
+ * @plexusone/pages
  *
  * Standard page components for SystemForge applications.
  *
  * @example
  * ```tsx
- * import { LoginPage, NotFoundPage, LoadingPage } from '@systemforge/pages';
+ * import { LoginPage, NotFoundPage, LoadingPage } from '@plexusone/pages';
  *
  * // Login page
  * <LoginPage

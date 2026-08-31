@@ -1,5 +1,5 @@
 {
-  "name": "@systemforge/telemetry",
+  "name": "@plexusone/telemetry",
   "version": "0.1.0",
   "description": "Telemetry, error tracking, and performance monitoring for SystemForge applications",
   "main": "./dist/index.js",

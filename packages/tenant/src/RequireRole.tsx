@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import { ROLE_LEVELS, type Role } from '@systemforge/auth';
+import { ROLE_LEVELS, type Role } from '@plexusone/auth';
 import { useTenant } from './TenantProvider';
 import type { RequireRoleProps } from './types';
 

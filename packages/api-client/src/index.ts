@@ -1,11 +1,11 @@
 /**
- * @systemforge/api-client
+ * @plexusone/api-client
  *
  * Type-safe API client with React Query integration for SystemForge applications.
  *
  * @example
  * ```tsx
- * import { ApiProvider, useApiQuery, useApiMutation } from '@systemforge/api-client';
+ * import { ApiProvider, useApiQuery, useApiMutation } from '@plexusone/api-client';
  *
  * function App() {
  *   return (

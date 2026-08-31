@@ -5,7 +5,7 @@
   "description": "SystemForge Web - React framework for multi-tenant SaaS applications",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grokify/systemforge-web.git"
+    "url": "https://github.com/plexusone/systemforge-web.git"
   },
   "license": "MIT",
   "scripts": {

@@ -7,7 +7,7 @@ import {
   useMemo,
   type ReactNode,
 } from 'react';
-import { useAuth, type Membership, type Role } from '@systemforge/auth';
+import { useAuth, type Membership, type Role } from '@plexusone/auth';
 import type {
   Organization,
   OrganizationMembership,

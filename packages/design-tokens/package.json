@@ -1,5 +1,5 @@
 {
-  "name": "@systemforge/design-tokens",
+  "name": "@plexusone/design-tokens",
   "version": "0.1.0",
   "description": "Design tokens and CSS custom properties for SystemForge applications",
   "main": "./dist/index.js",

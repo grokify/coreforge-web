@@ -55,7 +55,7 @@ function createDefaultQueryClient(): QueryClient {
  *
  * @example
  * ```tsx
- * import { ApiProvider } from '@systemforge/api-client';
+ * import { ApiProvider } from '@plexusone/api-client';
  *
  * function App() {
  *   return (

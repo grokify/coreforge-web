@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import { Button, MenuIcon } from '@systemforge/ui';
+import { Button, MenuIcon } from '@plexusone/ui';
 import type { NavbarProps } from './types';
 import { OrgSwitcher } from './OrgSwitcher';
 import { UserMenu } from './UserMenu';

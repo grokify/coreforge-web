@@ -1,5 +1,5 @@
 import { useState, type ReactNode, type FormEvent } from 'react';
-import { useAuth, useLinkedAccounts, type OAuthProvider } from '@systemforge/auth';
+import { useAuth, useLinkedAccounts, type OAuthProvider } from '@plexusone/auth';
 import type { UserSettingsPageProps, SettingsTab } from './types';
 
 /**

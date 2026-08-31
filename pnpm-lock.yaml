@@ -157,7 +157,7 @@ importers:
 
   packages/pages:
     devDependencies:
-      '@systemforge/auth':
+      '@plexusone/auth':
         specifier: workspace:*
         version: link:../auth
       '@types/react':
@@ -175,13 +175,13 @@ importers:
 
   packages/shell:
     devDependencies:
-      '@systemforge/auth':
+      '@plexusone/auth':
         specifier: workspace:*
         version: link:../auth
-      '@systemforge/tenant':
+      '@plexusone/tenant':
         specifier: workspace:*
         version: link:../tenant
-      '@systemforge/ui':
+      '@plexusone/ui':
         specifier: workspace:*
         version: link:../ui
       '@types/react':
@@ -215,7 +215,7 @@ importers:
 
   packages/tenant:
     devDependencies:
-      '@systemforge/auth':
+      '@plexusone/auth':
         specifier: workspace:*
         version: link:../auth
       '@testing-library/react':

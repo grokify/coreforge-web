@@ -7,5 +7,5 @@ export default defineConfig({
   splitting: false,
   sourcemap: true,
   clean: true,
-  external: ['react', 'react-dom', '@systemforge/auth'],
+  external: ['react', 'react-dom', '@plexusone/auth'],
 });

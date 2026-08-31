@@ -1,5 +1,5 @@
 import { useState, type ReactNode, type FormEvent } from 'react';
-import { useAuth, type OAuthProvider } from '@systemforge/auth';
+import { useAuth, type OAuthProvider } from '@plexusone/auth';
 import type { LoginPageProps } from './types';
 
 /**

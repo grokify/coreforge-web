@@ -1,11 +1,11 @@
 /**
- * @systemforge/auth
+ * @plexusone/auth
  *
  * Authentication primitives for SystemForge applications.
  *
  * @example
  * ```tsx
- * import { AuthProvider, useAuth, ProtectedRoute } from '@systemforge/auth';
+ * import { AuthProvider, useAuth, ProtectedRoute } from '@plexusone/auth';
  *
  * function App() {
  *   return (

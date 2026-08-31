@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import { useAuth } from '@systemforge/auth';
+import { useAuth } from '@plexusone/auth';
 import {
   Avatar,
   AvatarImage,
@@ -13,7 +13,7 @@ import {
   DropdownMenuTrigger,
   UserIcon,
   cn,
-} from '@systemforge/ui';
+} from '@plexusone/ui';
 import type { UserMenuProps, UserAction } from './types';
 
 /**

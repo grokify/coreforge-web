@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import { useTenant } from '@systemforge/tenant';
+import { useTenant } from '@plexusone/tenant';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,7 +12,7 @@ import {
   ChevronDownIcon,
   CheckIcon,
   cn,
-} from '@systemforge/ui';
+} from '@plexusone/ui';
 import type { OrgSwitcherProps } from './types';
 
 /**

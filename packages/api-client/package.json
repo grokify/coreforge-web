@@ -1,5 +1,5 @@
 {
-  "name": "@systemforge/api-client",
+  "name": "@plexusone/api-client",
   "version": "0.1.0",
   "description": "Type-safe API client with OpenAPI integration for SystemForge applications",
   "main": "./dist/index.js",

@@ -1,11 +1,11 @@
 /**
- * @systemforge/shell
+ * @plexusone/shell
  *
  * Application shell components for SystemForge applications.
  *
  * @example
  * ```tsx
- * import { AppShell } from '@systemforge/shell';
+ * import { AppShell } from '@plexusone/shell';
  *
  * function App() {
  *   return (

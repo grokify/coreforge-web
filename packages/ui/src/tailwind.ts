@@ -6,11 +6,11 @@
  *
  * 1. Import the SystemForge UI globals.css in your main CSS file:
  *
- *    @import "@systemforge/ui/globals.css";
+ *    @import "@plexusone/ui/globals.css";
  *
  * 2. Or import it in your main entry point (e.g., main.tsx):
  *
- *    import '@systemforge/ui/globals.css';
+ *    import '@plexusone/ui/globals.css';
  *
  * The globals.css file includes:
  * - Tailwind CSS base, components, and utilities
@@ -30,7 +30,7 @@
  */
 
 /**
- * @deprecated Use CSS import instead: @import "@systemforge/ui/globals.css"
+ * @deprecated Use CSS import instead: @import "@plexusone/ui/globals.css"
  *
  * This preset is provided for backward compatibility with Tailwind v3.
  * It will be removed in a future major version.

@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import { useRoleCheck } from '@systemforge/tenant';
+import { useRoleCheck } from '@plexusone/tenant';
 import {
   Badge,
   Button,
@@ -7,7 +7,7 @@ import {
   PanelLeftCloseIcon,
   PanelLeftOpenIcon,
   cn,
-} from '@systemforge/ui';
+} from '@plexusone/ui';
 import type { SidebarProps, NavItem, NavSection } from './types';
 
 /**

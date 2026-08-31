@@ -1,5 +1,5 @@
 /**
- * ProductGraph-specific hooks for @systemforge/telemetry
+ * ProductGraph-specific hooks for @plexusone/telemetry
  *
  * These hooks provide enhanced telemetry features for ProductGraph integration:
  * - State change tracking

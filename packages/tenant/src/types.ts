@@ -1,4 +1,4 @@
-import type { Role } from '@systemforge/auth';
+import type { Role } from '@plexusone/auth';
 
 /**
  * Organization type

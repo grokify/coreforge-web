@@ -1,13 +1,13 @@
 /**
- * ProductGraph Adapter for @systemforge/telemetry
+ * ProductGraph Adapter for @plexusone/telemetry
  *
  * This adapter sends telemetry events to ProductGraph's event ingestion API,
  * using OpenTelemetry-compatible semantic conventions.
  *
  * @example
  * ```tsx
- * import { TelemetryProvider } from '@systemforge/telemetry';
- * import { ProductGraphAdapter } from '@systemforge/telemetry/adapters/productgraph';
+ * import { TelemetryProvider } from '@plexusone/telemetry';
+ * import { ProductGraphAdapter } from '@plexusone/telemetry/adapters/productgraph';
  *
  * const productGraph = new ProductGraphAdapter({
  *   projectId: 'my-project',

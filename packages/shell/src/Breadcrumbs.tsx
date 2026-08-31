@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import { ChevronRightIcon, HomeIcon, cn } from '@systemforge/ui';
+import { ChevronRightIcon, HomeIcon, cn } from '@plexusone/ui';
 import type { BreadcrumbsProps } from './types';
 
 /**

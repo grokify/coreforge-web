@@ -1,5 +1,5 @@
 {
-  "name": "@systemforge/tenant",
+  "name": "@plexusone/tenant",
   "version": "0.1.0",
   "description": "Multi-tenant context for SystemForge applications",
   "main": "./dist/index.js",
@@ -25,12 +25,12 @@
     "clean": "rm -rf dist"
   },
   "peerDependencies": {
-    "@systemforge/auth": "^0.1.0",
+    "@plexusone/auth": "^0.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@systemforge/auth": "workspace:*",
+    "@plexusone/auth": "workspace:*",
     "@testing-library/react": "^16.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
@@ -43,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/grokify/systemforge-web.git",
+    "url": "https://github.com/plexusone/systemforge-web.git",
     "directory": "packages/tenant"
   },
   "license": "MIT",
