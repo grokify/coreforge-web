@@ -1,11 +1,11 @@
-# @systemforge/tenant
+# @plexusone/tenant
 
 Multi-tenancy primitives for organization-based applications.
 
 ## Installation
 
 ```bash
-pnpm add @systemforge/tenant
+pnpm add @plexusone/tenant
 ```
 
 ## Features
@@ -23,8 +23,8 @@ pnpm add @systemforge/tenant
 Wrap your application with `TenantProvider` (inside `AuthProvider`):
 
 ```tsx
-import { AuthProvider } from '@systemforge/auth';
-import { TenantProvider } from '@systemforge/tenant';
+import { AuthProvider } from '@plexusone/auth';
+import { TenantProvider } from '@plexusone/tenant';
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
 Access the current organization:
 
 ```tsx
-import { useOrganization } from '@systemforge/tenant';
+import { useOrganization } from '@plexusone/tenant';
 
 function OrgInfo() {
   const { organization, membership, isLoading } = useOrganization();
@@ -63,7 +63,7 @@ function OrgInfo() {
 List and switch organizations:
 
 ```tsx
-import { useOrganizations } from '@systemforge/tenant';
+import { useOrganizations } from '@plexusone/tenant';
 
 function OrgSwitcher() {
   const { organizations, currentOrg, switchOrg, isLoading } = useOrganizations();
@@ -89,7 +89,7 @@ function OrgSwitcher() {
 Restrict access based on role:
 
 ```tsx
-import { RequireRole } from '@systemforge/tenant';
+import { RequireRole } from '@plexusone/tenant';
 
 function AdminPanel() {
   return (

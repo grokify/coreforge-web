@@ -6,7 +6,7 @@
 
 ## Overview
 
-This document describes the technical architecture for integrating @systemforge/telemetry with ProductGraph for comprehensive frontend observability.
+This document describes the technical architecture for integrating @plexusone/telemetry with ProductGraph for comprehensive frontend observability.
 
 ## Architecture
 
@@ -232,7 +232,7 @@ import {
   useJourneyStep,
   JourneyProvider,
   ComponentPathProvider
-} from '@systemforge/telemetry';
+} from '@plexusone/telemetry';
 
 const adapter = new ProductGraphAdapter({
   projectId: 'proj_demo',
@@ -388,7 +388,7 @@ import amplitude from '@amplitude/analytics-browser';
 amplitude.track('button_clicked', { button: 'signup' });
 
 // After: Via ProductGraph
-import { useTelemetry } from '@systemforge/telemetry';
+import { useTelemetry } from '@plexusone/telemetry';
 const { trackAction } = useTelemetry();
 trackAction('button', 'click', { button: 'signup' });
 // Events forward to Amplitude via ProductGraph → omnidxi

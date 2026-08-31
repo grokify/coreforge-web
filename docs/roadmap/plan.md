@@ -21,7 +21,7 @@ This document outlines the phased implementation plan for SystemForge Web, an op
 - Working monorepo structure
 - CI pipeline running lint/test/build
 
-### 1.2 Auth Package (`@systemforge/auth`)
+### 1.2 Auth Package (`@plexusone/auth`)
 
 - [ ] Extract `AuthProvider` from App1-UI
 - [ ] Extract `useAuth` hook
@@ -39,10 +39,10 @@ This document outlines the phased implementation plan for SystemForge Web, an op
 
 **Deliverables:**
 
-- Published `@systemforge/auth` package
+- Published `@plexusone/auth` package
 - Working example in docs
 
-### 1.3 Tenant Package (`@systemforge/tenant`)
+### 1.3 Tenant Package (`@plexusone/tenant`)
 
 - [ ] Create `TenantProvider` context
 - [ ] Implement `useOrganization` hook
@@ -55,12 +55,12 @@ This document outlines the phased implementation plan for SystemForge Web, an op
 
 **Deliverables:**
 
-- Published `@systemforge/tenant` package
+- Published `@plexusone/tenant` package
 - Multi-org support working
 
 ## Phase 2: API Client & Telemetry (Week 3-5)
 
-### 2.1 API Client Package (`@systemforge/api-client`)
+### 2.1 API Client Package (`@plexusone/api-client`)
 
 - [ ] Implement `createClient` factory function
 - [ ] Add request/response interceptors
@@ -72,10 +72,10 @@ This document outlines the phased implementation plan for SystemForge Web, an op
 
 **Deliverables:**
 
-- Published `@systemforge/api-client` package
+- Published `@plexusone/api-client` package
 - Integration guide for TanStack Query
 
-### 2.2 Telemetry Package (`@systemforge/telemetry`)
+### 2.2 Telemetry Package (`@plexusone/telemetry`)
 
 - [ ] Define ProductGraph event schema
 - [ ] Implement `TelemetryProvider` and `TelemetryEmitter`
@@ -87,7 +87,7 @@ This document outlines the phased implementation plan for SystemForge Web, an op
 
 **Deliverables:**
 
-- Published `@systemforge/telemetry` package
+- Published `@plexusone/telemetry` package
 - Event schema documentation
 
 ## Phase 3: Shell Components (Week 5-7)
@@ -236,9 +236,9 @@ This document outlines the phased implementation plan for SystemForge Web, an op
 
 ### 6.2 Frontend Migration
 
-- [ ] Replace Zustand auth store with `@systemforge/auth`
-- [ ] Replace local shell with `@systemforge/shell`
-- [ ] Update API calls to use `@systemforge/api-client`
+- [ ] Replace Zustand auth store with `@plexusone/auth`
+- [ ] Replace local shell with `@plexusone/shell`
+- [ ] Update API calls to use `@plexusone/api-client`
 - [ ] Remove localStorage token handling
 - [ ] Add telemetry instrumentation
 - [ ] Apply design tokens
@@ -258,9 +258,9 @@ This document outlines the phased implementation plan for SystemForge Web, an op
 
 ### 7.1 Package Adoption
 
-- [ ] Replace local auth code with `@systemforge/auth`
-- [ ] Replace local shell with `@systemforge/shell`
-- [ ] Replace local API client with `@systemforge/api-client`
+- [ ] Replace local auth code with `@plexusone/auth`
+- [ ] Replace local shell with `@plexusone/shell`
+- [ ] Replace local API client with `@plexusone/api-client`
 - [ ] Add telemetry instrumentation
 - [ ] Apply design tokens
 
@@ -279,8 +279,8 @@ This document outlines the phased implementation plan for SystemForge Web, an op
 
 ### 8.1 Auth & Shell Setup
 
-- [ ] Add `@systemforge/auth` to App3
-- [ ] Add `@systemforge/shell` layout
+- [ ] Add `@plexusone/auth` to App3
+- [ ] Add `@plexusone/shell` layout
 - [ ] Implement login flow
 - [ ] Add protected routes
 

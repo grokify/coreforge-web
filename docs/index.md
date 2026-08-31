@@ -16,20 +16,20 @@ SystemForge Web provides a complete set of React packages for building productio
 
 | Package | Description |
 |---------|-------------|
-| `@systemforge/auth` | Authentication primitives (AuthProvider, ProtectedRoute) |
-| `@systemforge/tenant` | Multi-tenant context (TenantProvider, RequireRole) |
-| `@systemforge/api-client` | HTTP client with auth integration |
-| `@systemforge/telemetry` | Event instrumentation and error tracking |
-| `@systemforge/shell` | Application shell components |
-| `@systemforge/pages` | Pre-built pages (Login, Settings, Error) |
-| `@systemforge/design-tokens` | Design system tokens |
+| `@plexusone/auth` | Authentication primitives (AuthProvider, ProtectedRoute) |
+| `@plexusone/tenant` | Multi-tenant context (TenantProvider, RequireRole) |
+| `@plexusone/api-client` | HTTP client with auth integration |
+| `@plexusone/telemetry` | Event instrumentation and error tracking |
+| `@plexusone/shell` | Application shell components |
+| `@plexusone/pages` | Pre-built pages (Login, Settings, Error) |
+| `@plexusone/design-tokens` | Design system tokens |
 
 ## Quick Example
 
 ```tsx
-import { AuthProvider } from '@systemforge/auth';
-import { TenantProvider } from '@systemforge/tenant';
-import { AppShell } from '@systemforge/shell';
+import { AuthProvider } from '@plexusone/auth';
+import { TenantProvider } from '@plexusone/tenant';
+import { AppShell } from '@plexusone/shell';
 
 function App() {
   return (
@@ -52,7 +52,7 @@ function App() {
 
 ## Architecture
 
-SystemForge Web is designed to work with [SystemForge](https://github.com/grokify/systemforge) backends using the BFF (Backend-for-Frontend) pattern:
+SystemForge Web is designed to work with [SystemForge](https://github.com/plexusone/systemforge) backends using the BFF (Backend-for-Frontend) pattern:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐

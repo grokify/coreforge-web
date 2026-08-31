@@ -1,11 +1,11 @@
-# @systemforge/telemetry
+# @plexusone/telemetry
 
 Event instrumentation and error tracking for React applications.
 
 ## Installation
 
 ```bash
-pnpm add @systemforge/telemetry
+pnpm add @plexusone/telemetry
 ```
 
 ## Features
@@ -23,7 +23,7 @@ pnpm add @systemforge/telemetry
 Wrap your application with `TelemetryProvider`:
 
 ```tsx
-import { TelemetryProvider, consoleSink } from '@systemforge/telemetry';
+import { TelemetryProvider, consoleSink } from '@plexusone/telemetry';
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
 Track custom events:
 
 ```tsx
-import { useTrack } from '@systemforge/telemetry';
+import { useTrack } from '@plexusone/telemetry';
 
 function CheckoutButton() {
   const track = useTrack();
@@ -63,8 +63,8 @@ function CheckoutButton() {
 Catch and report errors:
 
 ```tsx
-import { ErrorBoundary } from '@systemforge/telemetry';
-import { ErrorPage } from '@systemforge/pages';
+import { ErrorBoundary } from '@plexusone/telemetry';
+import { ErrorPage } from '@plexusone/pages';
 
 function App() {
   return (
@@ -80,7 +80,7 @@ function App() {
 ### Page View Tracking
 
 ```tsx
-import { usePageView } from '@systemforge/telemetry';
+import { usePageView } from '@plexusone/telemetry';
 
 function Page({ title }: { title: string }) {
   usePageView(title);
@@ -94,7 +94,7 @@ function Page({ title }: { title: string }) {
 ### Console Sink
 
 ```tsx
-import { consoleSink } from '@systemforge/telemetry';
+import { consoleSink } from '@plexusone/telemetry';
 
 <TelemetryProvider sinks={[consoleSink({ level: 'debug' })]}>
 ```
@@ -150,7 +150,7 @@ ProductGraph provides advanced telemetry with session management, journey tracki
 ### ProductGraphAdapter
 
 ```tsx
-import { TelemetryProvider, ProductGraphAdapter } from '@systemforge/telemetry';
+import { TelemetryProvider, ProductGraphAdapter } from '@plexusone/telemetry';
 
 const adapter = new ProductGraphAdapter({
   projectId: 'my-project',
@@ -187,7 +187,7 @@ function App() {
 Track multi-step user flows:
 
 ```tsx
-import { JourneyProvider, useJourneyStep } from '@systemforge/telemetry';
+import { JourneyProvider, useJourneyStep } from '@plexusone/telemetry';
 
 function App() {
   return (
@@ -217,7 +217,7 @@ function PaymentStep() {
 Track state changes with before/after values:
 
 ```tsx
-import { useStateTracker } from '@systemforge/telemetry';
+import { useStateTracker } from '@plexusone/telemetry';
 
 function CartPage() {
   const [items, setItems] = useState([]);
@@ -236,7 +236,7 @@ function CartPage() {
 Build component hierarchy for debugging:
 
 ```tsx
-import { ComponentPathProvider, useComponentPath } from '@systemforge/telemetry';
+import { ComponentPathProvider, useComponentPath } from '@plexusone/telemetry';
 
 function App() {
   return (
@@ -264,7 +264,7 @@ function Widget() {
 | `usePageLeaveTracker` | Track page exit and duration |
 
 ```tsx
-import { useScrollTracker, useAPITracker } from '@systemforge/telemetry';
+import { useScrollTracker, useAPITracker } from '@plexusone/telemetry';
 
 function ArticlePage() {
   // Track scroll depth at 25%, 50%, 75%, 100%

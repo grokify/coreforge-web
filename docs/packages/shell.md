@@ -1,11 +1,11 @@
-# @systemforge/shell
+# @plexusone/shell
 
 Application shell components for consistent layouts.
 
 ## Installation
 
 ```bash
-pnpm add @systemforge/shell react-router-dom
+pnpm add @plexusone/shell react-router-dom
 ```
 
 ## Features
@@ -24,7 +24,7 @@ pnpm add @systemforge/shell react-router-dom
 The main layout component:
 
 ```tsx
-import { AppShell } from '@systemforge/shell';
+import { AppShell } from '@plexusone/shell';
 
 function App() {
   return (
@@ -63,7 +63,7 @@ const navigation = [
 ### Custom User Menu
 
 ```tsx
-import { AppShell, UserMenu } from '@systemforge/shell';
+import { AppShell, UserMenu } from '@plexusone/shell';
 
 function App() {
   return (
@@ -88,7 +88,7 @@ function App() {
 ### Breadcrumbs
 
 ```tsx
-import { Breadcrumbs } from '@systemforge/shell';
+import { Breadcrumbs } from '@plexusone/shell';
 
 function ProjectPage() {
   return (

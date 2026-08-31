@@ -131,7 +131,7 @@ systemforge-web/
 
 ## Package Specifications
 
-### 1. @systemforge/shell
+### 1. @plexusone/shell
 
 #### Dependencies
 
@@ -141,9 +141,9 @@ systemforge-web/
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0",
     "react-router-dom": "^6.0.0 || ^7.0.0",
-    "@systemforge/auth": "workspace:*",
-    "@systemforge/tenant": "workspace:*",
-    "@systemforge/telemetry": "workspace:*"
+    "@plexusone/auth": "workspace:*",
+    "@plexusone/tenant": "workspace:*",
+    "@plexusone/telemetry": "workspace:*"
   },
   "dependencies": {
     "lucide-react": "^0.400.0"
@@ -253,7 +253,7 @@ import { TopBar } from './TopBar';
 import { LeftNav } from './LeftNav';
 import { MobileMenu } from './MobileMenu';
 import { UserMenu } from './UserMenu';
-import { useInstrumented } from '@systemforge/telemetry';
+import { useInstrumented } from '@plexusone/telemetry';
 import type { AppShellProps } from './types';
 
 export function AppShell({
@@ -335,9 +335,9 @@ export function AppShell({
 // UserMenu.tsx
 
 import { useState } from 'react';
-import { useAuth, useLinkedAccounts } from '@systemforge/auth';
-import { useOrganizations, useCurrentOrg } from '@systemforge/tenant';
-import { useInstrumented } from '@systemforge/telemetry';
+import { useAuth, useLinkedAccounts } from '@plexusone/auth';
+import { useOrganizations, useCurrentOrg } from '@plexusone/tenant';
+import { useInstrumented } from '@plexusone/telemetry';
 import type { UserMenuProps } from './types';
 
 export function UserMenu({
@@ -466,8 +466,8 @@ export function UserMenu({
 // OrgSwitcher.tsx
 
 import { useState } from 'react';
-import { useOrganizations, useCurrentOrg } from '@systemforge/tenant';
-import { useInstrumented } from '@systemforge/telemetry';
+import { useOrganizations, useCurrentOrg } from '@plexusone/tenant';
+import { useInstrumented } from '@plexusone/telemetry';
 import type { OrgSwitcherProps } from './types';
 
 export function OrgSwitcher({ onOrgChange, showCreateOrg = true }: OrgSwitcherProps) {
@@ -538,14 +538,14 @@ export function OrgSwitcher({ onOrgChange, showCreateOrg = true }: OrgSwitcherPr
 }
 ```
 
-### 2. @systemforge/pages
+### 2. @plexusone/pages
 
 ```typescript
 // UserSettingsPage.tsx
 
 import { useState } from 'react';
-import { useAuth, useLinkedAccounts } from '@systemforge/auth';
-import { useInstrumented } from '@systemforge/telemetry';
+import { useAuth, useLinkedAccounts } from '@plexusone/auth';
+import { useInstrumented } from '@plexusone/telemetry';
 
 export function UserSettingsPage() {
   const { user, refreshUser } = useAuth();
@@ -612,9 +612,9 @@ export function UserSettingsPage() {
 // OrgMembersPage.tsx
 
 import { useState } from 'react';
-import { useOrganization, useMembership, useOrgMembers } from '@systemforge/tenant';
-import { RequireRole } from '@systemforge/tenant';
-import { useInstrumented } from '@systemforge/telemetry';
+import { useOrganization, useMembership, useOrgMembers } from '@plexusone/tenant';
+import { RequireRole } from '@plexusone/tenant';
+import { useInstrumented } from '@plexusone/telemetry';
 
 export function OrgMembersPage() {
   const { organization } = useOrganization();
@@ -700,14 +700,14 @@ export function OrgMembersPage() {
 }
 ```
 
-### 3. @systemforge/tenant
+### 3. @plexusone/tenant
 
 ```typescript
 // TenantProvider.tsx
 
 import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
-import { useAuth } from '@systemforge/auth';
-import { getEmitter } from '@systemforge/telemetry';
+import { useAuth } from '@plexusone/auth';
+import { getEmitter } from '@plexusone/telemetry';
 import type { Organization, Membership, TenantContextValue } from './types';
 
 const TenantContext = createContext<TenantContextValue | undefined>(undefined);
@@ -898,7 +898,7 @@ export function RequireRole({
 }
 ```
 
-### 4. @systemforge/design-tokens (with design-system-spec)
+### 4. @plexusone/design-tokens (with design-system-spec)
 
 ```json
 // dss/meta.json
@@ -1137,13 +1137,13 @@ export default defineConfig({
 
 | Package                  | Gzipped Size | Load Time Impact |
 | ------------------------ | ------------ | ---------------- |
-| @systemforge/shell         | < 15KB       | < 20ms           |
-| @systemforge/pages         | < 10KB       | < 15ms           |
-| @systemforge/auth          | < 5KB        | < 10ms           |
-| @systemforge/tenant        | < 3KB        | < 5ms            |
-| @systemforge/api-client    | < 3KB        | < 5ms            |
-| @systemforge/telemetry     | < 4KB        | < 5ms            |
-| @systemforge/design-tokens | < 2KB        | < 5ms            |
+| @plexusone/shell         | < 15KB       | < 20ms           |
+| @plexusone/pages         | < 10KB       | < 15ms           |
+| @plexusone/auth          | < 5KB        | < 10ms           |
+| @plexusone/tenant        | < 3KB        | < 5ms            |
+| @plexusone/api-client    | < 3KB        | < 5ms            |
+| @plexusone/telemetry     | < 4KB        | < 5ms            |
+| @plexusone/design-tokens | < 2KB        | < 5ms            |
 
 ## Accessibility Requirements
 

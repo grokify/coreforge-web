@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Integrate @systemforge/telemetry with ProductGraph to provide a complete frontend-to-backend observability pipeline with multi-provider analytics forwarding.
+Integrate @plexusone/telemetry with ProductGraph to provide a complete frontend-to-backend observability pipeline with multi-provider analytics forwarding.
 
 ## Current State
 
@@ -151,7 +151,7 @@ function createProductGraphAdapter(config: ProductGraphConfig) {
 
 // Next.js usage
 'use client';
-import { TelemetryProvider, createProductGraphAdapter } from '@systemforge/telemetry';
+import { TelemetryProvider, createProductGraphAdapter } from '@plexusone/telemetry';
 
 const adapter = createProductGraphAdapter({
   projectId: process.env.NEXT_PUBLIC_PRODUCTGRAPH_PROJECT_ID!,

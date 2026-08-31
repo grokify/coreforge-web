@@ -1,11 +1,11 @@
-# @systemforge/pages
+# @plexusone/pages
 
 Pre-built pages for common application needs.
 
 ## Installation
 
 ```bash
-pnpm add @systemforge/pages react-router-dom
+pnpm add @plexusone/pages react-router-dom
 ```
 
 ## Features
@@ -22,7 +22,7 @@ pnpm add @systemforge/pages react-router-dom
 ### LoginPage
 
 ```tsx
-import { LoginPage } from '@systemforge/pages';
+import { LoginPage } from '@plexusone/pages';
 
 function Login() {
   return (
@@ -41,7 +41,7 @@ function Login() {
 ### UserSettingsPage
 
 ```tsx
-import { UserSettingsPage } from '@systemforge/pages';
+import { UserSettingsPage } from '@plexusone/pages';
 
 function Settings() {
   return (
@@ -58,7 +58,7 @@ function Settings() {
 ### ErrorPage
 
 ```tsx
-import { ErrorPage } from '@systemforge/pages';
+import { ErrorPage } from '@plexusone/pages';
 
 function NotFound() {
   return (
@@ -75,7 +75,7 @@ function NotFound() {
 ### LoadingPage
 
 ```tsx
-import { LoadingPage } from '@systemforge/pages';
+import { LoadingPage } from '@plexusone/pages';
 
 function AppLoader() {
   return <LoadingPage message="Loading your workspace..." />;
@@ -85,7 +85,7 @@ function AppLoader() {
 ### MaintenancePage
 
 ```tsx
-import { MaintenancePage } from '@systemforge/pages';
+import { MaintenancePage } from '@plexusone/pages';
 
 function Maintenance() {
   return (
@@ -151,7 +151,7 @@ Pages for managing organization members, invitations, and settings.
 Manage organization members with role editing and ownership transfer.
 
 ```tsx
-import { OrganizationMembersPage } from '@systemforge/pages';
+import { OrganizationMembersPage } from '@plexusone/pages';
 
 function Members() {
   return (
@@ -183,7 +183,7 @@ function Members() {
 Manage pending invitations to join the organization.
 
 ```tsx
-import { OrganizationInvitationsPage } from '@systemforge/pages';
+import { OrganizationInvitationsPage } from '@plexusone/pages';
 
 function Invitations() {
   return (
@@ -214,7 +214,7 @@ function Invitations() {
 Tabbed settings page for organization configuration.
 
 ```tsx
-import { OrganizationSettingsPage } from '@systemforge/pages';
+import { OrganizationSettingsPage } from '@plexusone/pages';
 
 function OrgSettings() {
   return (

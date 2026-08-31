@@ -1,11 +1,11 @@
-# @systemforge/auth
+# @plexusone/auth
 
 Authentication primitives for secure BFF-based authentication.
 
 ## Installation
 
 ```bash
-pnpm add @systemforge/auth
+pnpm add @plexusone/auth
 ```
 
 ## Features
@@ -23,7 +23,7 @@ pnpm add @systemforge/auth
 Wrap your application with `AuthProvider`:
 
 ```tsx
-import { AuthProvider } from '@systemforge/auth';
+import { AuthProvider } from '@plexusone/auth';
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
 Access authentication state and methods:
 
 ```tsx
-import { useAuth } from '@systemforge/auth';
+import { useAuth } from '@plexusone/auth';
 
 function UserInfo() {
   const { user, isAuthenticated, isLoading, login, logout } = useAuth();
@@ -65,7 +65,7 @@ Protect routes that require authentication:
 
 ```tsx
 import { Routes, Route } from 'react-router-dom';
-import { ProtectedRoute } from '@systemforge/auth';
+import { ProtectedRoute } from '@plexusone/auth';
 
 function AppRoutes() {
   return (
@@ -85,7 +85,7 @@ function AppRoutes() {
 Manage OAuth provider connections:
 
 ```tsx
-import { useLinkedAccounts } from '@systemforge/auth';
+import { useLinkedAccounts } from '@plexusone/auth';
 
 function LinkedAccounts() {
   const { accounts, link, unlink } = useLinkedAccounts();

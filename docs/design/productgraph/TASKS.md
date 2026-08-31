@@ -4,7 +4,7 @@
 
 ## Overview
 
-Task breakdown for integrating @systemforge/telemetry with ProductGraph.
+Task breakdown for integrating @plexusone/telemetry with ProductGraph.
 
 ## Phase 1: Documentation
 

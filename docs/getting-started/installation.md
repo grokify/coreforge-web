@@ -11,13 +11,13 @@ Install the packages you need:
 
 ```bash
 # Core packages (recommended starting point)
-pnpm add @systemforge/auth @systemforge/tenant @systemforge/shell
+pnpm add @plexusone/auth @plexusone/tenant @plexusone/shell
 
 # Optional packages
-pnpm add @systemforge/api-client    # HTTP client
-pnpm add @systemforge/telemetry     # Event tracking
-pnpm add @systemforge/pages         # Pre-built pages
-pnpm add @systemforge/design-tokens # Design tokens
+pnpm add @plexusone/api-client    # HTTP client
+pnpm add @plexusone/telemetry     # Event tracking
+pnpm add @plexusone/pages         # Pre-built pages
+pnpm add @plexusone/design-tokens # Design tokens
 ```
 
 ## Peer Dependencies
@@ -35,9 +35,9 @@ Some packages have additional peer dependencies:
 
 | Package | Additional Peers |
 |---------|------------------|
-| `@systemforge/api-client` | `@tanstack/react-query` |
-| `@systemforge/shell` | `react-router-dom` |
-| `@systemforge/pages` | `react-router-dom` |
+| `@plexusone/api-client` | `@tanstack/react-query` |
+| `@plexusone/shell` | `react-router-dom` |
+| `@plexusone/pages` | `react-router-dom` |
 
 ## TypeScript
 

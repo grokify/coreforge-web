@@ -6,7 +6,7 @@
 
 ## Overview
 
-This document defines the product requirements for integrating ProductGraph with @systemforge/telemetry to provide a complete frontend-to-backend observability pipeline.
+This document defines the product requirements for integrating ProductGraph with @plexusone/telemetry to provide a complete frontend-to-backend observability pipeline.
 
 ## Problem Statement
 
@@ -22,7 +22,7 @@ Modern SaaS applications need comprehensive product analytics that:
 
 ### Primary Goals
 
-1. **Complete ProductGraph adapter** in @systemforge/telemetry (DONE)
+1. **Complete ProductGraph adapter** in @plexusone/telemetry (DONE)
 2. **Document usage patterns** for common scenarios
 3. **Enable backend correlation** via trace ID propagation
 4. **Support multi-provider forwarding** via ProductGraph → omnidxi

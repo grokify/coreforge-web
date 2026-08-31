@@ -13,7 +13,7 @@ pnpm install
 ## 2. Install SystemForge Web
 
 ```bash
-pnpm add @systemforge/auth @systemforge/tenant @systemforge/shell @systemforge/api-client
+pnpm add @plexusone/auth @plexusone/tenant @plexusone/shell @plexusone/api-client
 pnpm add @tanstack/react-query react-router-dom
 ```
 
@@ -24,10 +24,10 @@ Create `src/App.tsx`:
 ```tsx
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router-dom';
-import { AuthProvider } from '@systemforge/auth';
-import { TenantProvider } from '@systemforge/tenant';
-import { ApiProvider } from '@systemforge/api-client';
-import { AppShell } from '@systemforge/shell';
+import { AuthProvider } from '@plexusone/auth';
+import { TenantProvider } from '@plexusone/tenant';
+import { ApiProvider } from '@plexusone/api-client';
+import { AppShell } from '@plexusone/shell';
 import { Routes } from './Routes';
 
 const queryClient = new QueryClient();
@@ -63,8 +63,8 @@ Create `src/Routes.tsx`:
 
 ```tsx
 import { Routes as RouterRoutes, Route } from 'react-router-dom';
-import { ProtectedRoute } from '@systemforge/auth';
-import { LoginPage } from '@systemforge/pages';
+import { ProtectedRoute } from '@plexusone/auth';
+import { LoginPage } from '@plexusone/pages';
 
 function Dashboard() {
   return <h1>Dashboard</h1>;

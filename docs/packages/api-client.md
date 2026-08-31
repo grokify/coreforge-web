@@ -1,11 +1,11 @@
-# @systemforge/api-client
+# @plexusone/api-client
 
 HTTP client with authentication and tenant context integration.
 
 ## Installation
 
 ```bash
-pnpm add @systemforge/api-client @tanstack/react-query
+pnpm add @plexusone/api-client @tanstack/react-query
 ```
 
 ## Features
@@ -24,7 +24,7 @@ Wrap your application with `ApiProvider`:
 
 ```tsx
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ApiProvider } from '@systemforge/api-client';
+import { ApiProvider } from '@plexusone/api-client';
 
 const queryClient = new QueryClient();
 
@@ -46,7 +46,7 @@ function App() {
 Make API calls with automatic auth:
 
 ```tsx
-import { useApi } from '@systemforge/api-client';
+import { useApi } from '@plexusone/api-client';
 
 function UserList() {
   const api = useApi();
@@ -68,7 +68,7 @@ function UserList() {
 ### Mutations
 
 ```tsx
-import { useApi } from '@systemforge/api-client';
+import { useApi } from '@plexusone/api-client';
 
 function CreateUser() {
   const api = useApi();
@@ -91,7 +91,7 @@ function CreateUser() {
 ### Direct Client Access
 
 ```tsx
-import { useApiClient } from '@systemforge/api-client';
+import { useApiClient } from '@plexusone/api-client';
 
 function DownloadReport() {
   const client = useApiClient();

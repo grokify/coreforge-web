@@ -585,7 +585,7 @@
 - [ ] Install packages
 
   ```bash
-  pnpm add @systemforge/shell @systemforge/auth @systemforge/tenant @systemforge/api-client @systemforge/telemetry @systemforge/design-tokens
+  pnpm add @plexusone/shell @plexusone/auth @plexusone/tenant @plexusone/api-client @plexusone/telemetry @plexusone/design-tokens
   ```
 
 - [ ] Replace auth store
@@ -596,7 +596,7 @@
 
 - [ ] Replace shell
   - Remove local layout components
-  - Use `<AppShell>` from @systemforge/shell
+  - Use `<AppShell>` from @plexusone/shell
   - Configure nav items
 
 - [ ] Update API calls

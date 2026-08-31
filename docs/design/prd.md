@@ -126,7 +126,7 @@ Organization Level (Tenant Scope)
 
 ### Functional Requirements
 
-#### FR-1: Web Shell Package (`@systemforge/shell`)
+#### FR-1: Web Shell Package (`@plexusone/shell`)
 
 | ID     | Requirement                                                      | Priority |
 | ------ | ---------------------------------------------------------------- | -------- |
@@ -139,7 +139,7 @@ Organization Level (Tenant Scope)
 | FR-1.7 | Support custom branding (logo, colors via design tokens)         | P1       |
 | FR-1.8 | Emit telemetry events for navigation, org switches               | P0       |
 
-#### FR-2: Default Pages Package (`@systemforge/pages`)
+#### FR-2: Default Pages Package (`@plexusone/pages`)
 
 | ID     | Requirement                                                       | Priority |
 | ------ | ----------------------------------------------------------------- | -------- |
@@ -152,7 +152,7 @@ Organization Level (Tenant Scope)
 | FR-2.7 | Provide `<LoginPage>` with OAuth provider buttons                 | P0       |
 | FR-2.8 | Provide `<PlatformAdminPage>` (for SaaS admins)                   | P2       |
 
-#### FR-3: Authentication Package (`@systemforge/auth`)
+#### FR-3: Authentication Package (`@plexusone/auth`)
 
 | ID     | Requirement                                                                            | Priority |
 | ------ | -------------------------------------------------------------------------------------- | -------- |
@@ -165,7 +165,7 @@ Organization Level (Tenant Scope)
 | FR-3.7 | Provide `useLinkedAccounts` hook for account switching                                 | P1       |
 | FR-3.8 | Provide `useCurrentOrg` hook for organization context                                  | P0       |
 
-#### FR-4: Multi-Tenant Package (`@systemforge/tenant`)
+#### FR-4: Multi-Tenant Package (`@plexusone/tenant`)
 
 | ID     | Requirement                                                 | Priority |
 | ------ | ----------------------------------------------------------- | -------- |
@@ -177,7 +177,7 @@ Organization Level (Tenant Scope)
 | FR-4.6 | Support platform-level (non-tenant) admin context           | P1       |
 | FR-4.7 | Emit telemetry events for org context changes               | P0       |
 
-#### FR-5: API Client Package (`@systemforge/api-client`)
+#### FR-5: API Client Package (`@plexusone/api-client`)
 
 | ID     | Requirement                                                     | Priority |
 | ------ | --------------------------------------------------------------- | -------- |
@@ -188,7 +188,7 @@ Organization Level (Tenant Scope)
 | FR-5.5 | Integration with TanStack Query                                 | P1       |
 | FR-5.6 | Request deduplication for identical concurrent requests         | P2       |
 
-#### FR-6: Telemetry Package (`@systemforge/telemetry`)
+#### FR-6: Telemetry Package (`@plexusone/telemetry`)
 
 | ID     | Requirement                                                 | Priority |
 | ------ | ----------------------------------------------------------- | -------- |
@@ -201,7 +201,7 @@ Organization Level (Tenant Scope)
 | FR-6.7 | No-op mode for development/testing                          | P0       |
 | FR-6.8 | Include org_id in all events automatically                  | P0       |
 
-#### FR-7: Design Tokens Package (`@systemforge/design-tokens`)
+#### FR-7: Design Tokens Package (`@plexusone/design-tokens`)
 
 | ID     | Requirement                                             | Priority |
 | ------ | ------------------------------------------------------- | -------- |
@@ -323,7 +323,7 @@ interface Membership {
 ### C. Shell Customization API
 
 ```tsx
-import { AppShell, TopBar, LeftNav, UserMenu } from '@systemforge/shell';
+import { AppShell, TopBar, LeftNav, UserMenu } from '@plexusone/shell';
 
 function MyApp() {
   return (
@@ -384,7 +384,7 @@ function MyApp() {
 
 | Project                                                               | Relationship                                   |
 | --------------------------------------------------------------------- | ---------------------------------------------- |
-| [SystemForge](https://github.com/grokify/systemforge)                     | Backend platform (identity, auth, marketplace) |
+| [SystemForge](https://github.com/plexusone/systemforge)                     | Backend platform (identity, auth, marketplace) |
 | [ProductGraph](https://github.com/plexusone/productgraph)             | Telemetry sink, journey analytics              |
 | [design-system-spec](https://github.com/plexusone/design-system-spec) | Design token format specification              |
 | [App1](https://github.com/grokify/app1)                               | Target application (LMS)                       |

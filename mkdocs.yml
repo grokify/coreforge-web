@@ -1,8 +1,8 @@
 site_name: SystemForge Web
 site_description: React framework for building multi-tenant SaaS applications
-site_url: https://grokify.github.io/systemforge-web/
-repo_url: https://github.com/grokify/systemforge-web
-repo_name: grokify/systemforge-web
+site_url: https://plexusone.github.io/systemforge-web/
+repo_url: https://github.com/plexusone/systemforge-web
+repo_name: plexusone/systemforge-web
 
 theme:
   name: material
@@ -50,13 +50,13 @@ nav:
     - Quick Start: getting-started/quickstart.md
   - Packages:
     - Overview: packages/index.md
-    - "@systemforge/auth": packages/auth.md
-    - "@systemforge/tenant": packages/tenant.md
-    - "@systemforge/api-client": packages/api-client.md
-    - "@systemforge/telemetry": packages/telemetry.md
-    - "@systemforge/shell": packages/shell.md
-    - "@systemforge/pages": packages/pages.md
-    - "@systemforge/design-tokens": packages/design-tokens.md
+    - "@plexusone/auth": packages/auth.md
+    - "@plexusone/tenant": packages/tenant.md
+    - "@plexusone/api-client": packages/api-client.md
+    - "@plexusone/telemetry": packages/telemetry.md
+    - "@plexusone/shell": packages/shell.md
+    - "@plexusone/pages": packages/pages.md
+    - "@plexusone/design-tokens": packages/design-tokens.md
   - Architecture:
     - Overview: architecture/overview.md
   - Design:

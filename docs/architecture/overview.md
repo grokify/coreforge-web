@@ -144,20 +144,20 @@ The recommended provider order:
 ## Package Dependencies
 
 ```
-@systemforge/design-tokens  (standalone)
+@plexusone/design-tokens  (standalone)
          │
          ▼
-@systemforge/auth ◄──────── @systemforge/tenant
+@plexusone/auth ◄──────── @plexusone/tenant
          │                       │
          └───────────┬───────────┘
                      │
          ┌───────────┴───────────┐
          ▼                       ▼
-@systemforge/api-client    @systemforge/telemetry
+@plexusone/api-client    @plexusone/telemetry
          │                       │
          └───────────┬───────────┘
                      │
          ┌───────────┴───────────┐
          ▼                       ▼
-  @systemforge/shell       @systemforge/pages
+  @plexusone/shell       @plexusone/pages
 ```
