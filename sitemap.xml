@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://grokify.github.io/coreforge-web/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/changelog/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/changelog/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/architecture/overview/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/architecture/overview/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/design/prd/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/design/prd/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/design/trd/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/design/trd/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/design/productgraph/PLAN/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/design/productgraph/PLAN/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/design/productgraph/PRD/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/design/productgraph/PRD/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/design/productgraph/TASKS/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/design/productgraph/TASKS/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/design/productgraph/TRD/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/design/productgraph/TRD/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/getting-started/installation/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/getting-started/installation/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/getting-started/quickstart/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/getting-started/quickstart/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/packages/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/packages/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/packages/api-client/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/packages/api-client/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/packages/auth/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/packages/auth/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/packages/design-tokens/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/packages/design-tokens/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/packages/pages/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/packages/pages/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/packages/shell/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/packages/shell/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/packages/telemetry/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/packages/telemetry/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/packages/tenant/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/packages/tenant/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/releases/v0.1.0/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/releases/v0.1.0/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
     <url>
-         <loc>https://grokify.github.io/coreforge-web/roadmap/plan/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <loc>https://plexusone.github.io/systemforge-web/roadmap/plan/</loc>
+         <lastmod>2026-09-06</lastmod>
     </url>
 </urlset>

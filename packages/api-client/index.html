@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://grokify.github.io/coreforge-web/packages/api-client/">
+        <link rel="canonical" href="https://plexusone.github.io/systemforge-web/packages/api-client/">
       
       
         <link rel="prev" href="../tenant/">
@@ -19,19 +19,22 @@
         <link rel="next" href="../telemetry/">
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>@coreforge/api-client - CoreForge Web</title>
+        <title>@plexusone/api-client - SystemForge Web</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -56,7 +59,6 @@
 
     
     
-    
   </head>
   
   
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#coreforgeapi-client" class="md-skip">
+        <a href="#plexusoneapi-client" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="CoreForge Web" class="md-header__button md-logo" aria-label="CoreForge Web" data-md-component="logo">
+    <a href="../.." title="SystemForge Web" class="md-header__button md-logo" aria-label="SystemForge Web" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,13 +106,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            CoreForge Web
+            SystemForge Web
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              @coreforge/api-client
+              @plexusone/api-client
             
           </span>
         </div>
@@ -190,13 +192,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/grokify/coreforge-web" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/plexusone/systemforge-web" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    grokify/coreforge-web
+    plexusone/systemforge-web
   </div>
 </a>
       </div>
@@ -378,23 +380,23 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="CoreForge Web" class="md-nav__button md-logo" aria-label="CoreForge Web" data-md-component="logo">
+    <a href="../.." title="SystemForge Web" class="md-nav__button md-logo" aria-label="SystemForge Web" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    CoreForge Web
+    SystemForge Web
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/grokify/coreforge-web" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/plexusone/systemforge-web" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    grokify/coreforge-web
+    plexusone/systemforge-web
   </div>
 </a>
     </div>
@@ -413,9 +415,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
     
   </span>
+  
   
 
       </a>
@@ -453,9 +460,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Getting Started
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -464,7 +476,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Getting Started
+            
+  
+    Getting Started
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -480,9 +496,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Installation
+  
+
     
   </span>
+  
   
 
       </a>
@@ -503,9 +524,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Quick Start
+  
+
     
   </span>
+  
   
 
       </a>
@@ -554,9 +580,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Packages
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -565,7 +596,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Packages
+            
+  
+    Packages
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -581,9 +616,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
+  
   
 
       </a>
@@ -604,9 +644,14 @@
   
   
   <span class="md-ellipsis">
-    @coreforge/auth
+    
+  
+    @plexusone/auth
+  
+
     
   </span>
+  
   
 
       </a>
@@ -627,9 +672,14 @@
   
   
   <span class="md-ellipsis">
-    @coreforge/tenant
+    
+  
+    @plexusone/tenant
+  
+
     
   </span>
+  
   
 
       </a>
@@ -659,9 +709,14 @@
   
   
   <span class="md-ellipsis">
-    @coreforge/api-client
+    
+  
+    @plexusone/api-client
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -672,9 +727,14 @@
   
   
   <span class="md-ellipsis">
-    @coreforge/api-client
+    
+  
+    @plexusone/api-client
+  
+
     
   </span>
+  
   
 
       </a>
@@ -697,7 +757,9 @@
         <li class="md-nav__item">
   <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      
+        Installation
+      
     </span>
   </a>
   
@@ -706,7 +768,9 @@
         <li class="md-nav__item">
   <a href="#features" class="md-nav__link">
     <span class="md-ellipsis">
-      Features
+      
+        Features
+      
     </span>
   </a>
   
@@ -715,7 +779,9 @@
         <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Usage
+      
+        Usage
+      
     </span>
   </a>
   
@@ -725,7 +791,9 @@
           <li class="md-nav__item">
   <a href="#apiprovider" class="md-nav__link">
     <span class="md-ellipsis">
-      ApiProvider
+      
+        ApiProvider
+      
     </span>
   </a>
   
@@ -734,7 +802,9 @@
           <li class="md-nav__item">
   <a href="#useapi-hook" class="md-nav__link">
     <span class="md-ellipsis">
-      useApi Hook
+      
+        useApi Hook
+      
     </span>
   </a>
   
@@ -743,7 +813,9 @@
           <li class="md-nav__item">
   <a href="#mutations" class="md-nav__link">
     <span class="md-ellipsis">
-      Mutations
+      
+        Mutations
+      
     </span>
   </a>
   
@@ -752,7 +824,9 @@
           <li class="md-nav__item">
   <a href="#direct-client-access" class="md-nav__link">
     <span class="md-ellipsis">
-      Direct Client Access
+      
+        Direct Client Access
+      
     </span>
   </a>
   
@@ -766,7 +840,9 @@
         <li class="md-nav__item">
   <a href="#api-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      API Reference
+      
+        API Reference
+      
     </span>
   </a>
   
@@ -776,7 +852,9 @@
           <li class="md-nav__item">
   <a href="#apiprovider-props" class="md-nav__link">
     <span class="md-ellipsis">
-      ApiProvider Props
+      
+        ApiProvider Props
+      
     </span>
   </a>
   
@@ -785,7 +863,9 @@
           <li class="md-nav__item">
   <a href="#useapi-return-value" class="md-nav__link">
     <span class="md-ellipsis">
-      useApi Return Value
+      
+        useApi Return Value
+      
     </span>
   </a>
   
@@ -794,7 +874,9 @@
           <li class="md-nav__item">
   <a href="#client-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      Client Methods
+      
+        Client Methods
+      
     </span>
   </a>
   
@@ -826,9 +908,14 @@
   
   
   <span class="md-ellipsis">
-    @coreforge/telemetry
+    
+  
+    @plexusone/telemetry
+  
+
     
   </span>
+  
   
 
       </a>
@@ -849,9 +936,14 @@
   
   
   <span class="md-ellipsis">
-    @coreforge/shell
+    
+  
+    @plexusone/shell
+  
+
     
   </span>
+  
   
 
       </a>
@@ -872,9 +964,14 @@
   
   
   <span class="md-ellipsis">
-    @coreforge/pages
+    
+  
+    @plexusone/pages
+  
+
     
   </span>
+  
   
 
       </a>
@@ -895,9 +992,14 @@
   
   
   <span class="md-ellipsis">
-    @coreforge/design-tokens
+    
+  
+    @plexusone/design-tokens
+  
+
     
   </span>
+  
   
 
       </a>
@@ -943,9 +1045,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Architecture
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -954,7 +1061,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Architecture
+            
+  
+    Architecture
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -970,9 +1081,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1018,9 +1134,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Design
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1029,7 +1150,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Design
+            
+  
+    Design
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1045,9 +1170,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     PRD
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1068,9 +1198,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     TRD
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1109,9 +1244,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     ProductGraph
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1120,7 +1260,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_3">
             <span class="md-nav__icon md-icon"></span>
-            ProductGraph
+            
+  
+    ProductGraph
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1136,9 +1280,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     PRD
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1159,9 +1308,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     TRD
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1182,9 +1336,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Plan
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1205,9 +1364,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Tasks
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1261,9 +1425,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Roadmap
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1272,7 +1441,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Roadmap
+            
+  
+    Roadmap
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1288,9 +1461,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Plan
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1336,9 +1514,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Releases
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1347,7 +1530,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Releases
+            
+  
+    Releases
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1363,9 +1550,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Changelog
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1386,9 +1578,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     v0.1.0
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1433,7 +1630,9 @@
         <li class="md-nav__item">
   <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      
+        Installation
+      
     </span>
   </a>
   
@@ -1442,7 +1641,9 @@
         <li class="md-nav__item">
   <a href="#features" class="md-nav__link">
     <span class="md-ellipsis">
-      Features
+      
+        Features
+      
     </span>
   </a>
   
@@ -1451,7 +1652,9 @@
         <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Usage
+      
+        Usage
+      
     </span>
   </a>
   
@@ -1461,7 +1664,9 @@
           <li class="md-nav__item">
   <a href="#apiprovider" class="md-nav__link">
     <span class="md-ellipsis">
-      ApiProvider
+      
+        ApiProvider
+      
     </span>
   </a>
   
@@ -1470,7 +1675,9 @@
           <li class="md-nav__item">
   <a href="#useapi-hook" class="md-nav__link">
     <span class="md-ellipsis">
-      useApi Hook
+      
+        useApi Hook
+      
     </span>
   </a>
   
@@ -1479,7 +1686,9 @@
           <li class="md-nav__item">
   <a href="#mutations" class="md-nav__link">
     <span class="md-ellipsis">
-      Mutations
+      
+        Mutations
+      
     </span>
   </a>
   
@@ -1488,7 +1697,9 @@
           <li class="md-nav__item">
   <a href="#direct-client-access" class="md-nav__link">
     <span class="md-ellipsis">
-      Direct Client Access
+      
+        Direct Client Access
+      
     </span>
   </a>
   
@@ -1502,7 +1713,9 @@
         <li class="md-nav__item">
   <a href="#api-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      API Reference
+      
+        API Reference
+      
     </span>
   </a>
   
@@ -1512,7 +1725,9 @@
           <li class="md-nav__item">
   <a href="#apiprovider-props" class="md-nav__link">
     <span class="md-ellipsis">
-      ApiProvider Props
+      
+        ApiProvider Props
+      
     </span>
   </a>
   
@@ -1521,7 +1736,9 @@
           <li class="md-nav__item">
   <a href="#useapi-return-value" class="md-nav__link">
     <span class="md-ellipsis">
-      useApi Return Value
+      
+        useApi Return Value
+      
     </span>
   </a>
   
@@ -1530,7 +1747,9 @@
           <li class="md-nav__item">
   <a href="#client-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      Client Methods
+      
+        Client Methods
+      
     </span>
   </a>
   
@@ -1551,6 +1770,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -1560,10 +1780,10 @@
   
 
 
-<h1 id="coreforgeapi-client">@coreforge/api-client<a class="headerlink" href="#coreforgeapi-client" title="Permanent link">&para;</a></h1>
+<h1 id="plexusoneapi-client">@plexusone/api-client<a class="headerlink" href="#plexusoneapi-client" title="Permanent link">&para;</a></h1>
 <p>HTTP client with authentication and tenant context integration.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pnpm<span class="w"> </span>add<span class="w"> </span>@coreforge/api-client<span class="w"> </span>@tanstack/react-query
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pnpm<span class="w"> </span>add<span class="w"> </span>@plexusone/api-client<span class="w"> </span>@tanstack/react-query
 </code></pre></div>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1577,7 +1797,7 @@
 <h3 id="apiprovider">ApiProvider<a class="headerlink" href="#apiprovider" title="Permanent link">&para;</a></h3>
 <p>Wrap your application with <code>ApiProvider</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">QueryClient</span><span class="p">,</span><span class="w"> </span><span class="nx">QueryClientProvider</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@tanstack/react-query&#39;</span><span class="p">;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ApiProvider</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@coreforge/api-client&#39;</span><span class="p">;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ApiProvider</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@plexusone/api-client&#39;</span><span class="p">;</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">queryClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">QueryClient</span><span class="p">();</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
@@ -1595,7 +1815,7 @@
 </code></pre></div>
 <h3 id="useapi-hook">useApi Hook<a class="headerlink" href="#useapi-hook" title="Permanent link">&para;</a></h3>
 <p>Make API calls with automatic auth:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useApi</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@coreforge/api-client&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useApi</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@plexusone/api-client&#39;</span><span class="p">;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">UserList</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">api</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useApi</span><span class="p">();</span>
@@ -1614,7 +1834,7 @@
 <a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">}</span>
 </code></pre></div>
 <h3 id="mutations">Mutations<a class="headerlink" href="#mutations" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useApi</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@coreforge/api-client&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useApi</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@plexusone/api-client&#39;</span><span class="p">;</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">CreateUser</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">api</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useApi</span><span class="p">();</span>
@@ -1634,7 +1854,7 @@
 <a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="p">}</span>
 </code></pre></div>
 <h3 id="direct-client-access">Direct Client Access<a class="headerlink" href="#direct-client-access" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useApiClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@coreforge/api-client&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useApiClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@plexusone/api-client&#39;</span><span class="p">;</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">DownloadReport</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useApiClient</span><span class="p">();</span>
@@ -1785,10 +2005,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
